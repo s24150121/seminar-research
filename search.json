@@ -1,0 +1,372 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "東京都内シェアサイクル利用数の予測モデル構築に関する研究",
+    "section": "",
+    "text": "目次",
+    "crumbs": [
+      "目次"
+    ]
+  },
+  {
+    "objectID": "index.html#本編",
+    "href": "index.html#本編",
+    "title": "東京都内シェアサイクル利用数の予測モデル構築に関する研究",
+    "section": "本編",
+    "text": "本編\n\n研究概要\nデータ\n分析手法\n結果と考察\nまとめ",
+    "crumbs": [
+      "目次"
+    ]
+  },
+  {
+    "objectID": "index.html#発表資料",
+    "href": "index.html#発表資料",
+    "title": "東京都内シェアサイクル利用数の予測モデル構築に関する研究",
+    "section": "発表資料",
+    "text": "発表資料\n\nスライド（HTML）\nスライド（PDF）\nスライド（PowerPoint）",
+    "crumbs": [
+      "目次"
+    ]
+  },
+  {
+    "objectID": "01_研究概要.html",
+    "href": "01_研究概要.html",
+    "title": "1  研究概要",
+    "section": "",
+    "text": "1.1 研究件名\n東京都内シェアサイクル利用数の予測モデル構築に関する研究",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
+    ]
+  },
+  {
+    "objectID": "01_研究概要.html#研究の背景",
+    "href": "01_研究概要.html#研究の背景",
+    "title": "1  研究概要",
+    "section": "1.2 研究の背景",
+    "text": "1.2 研究の背景\n近年、都市部における交通手段としてシェアサイクル（自転車シェアリング）の利用が急速に拡大している。シェアサイクルは環境負荷の低い移動手段として注目されるだけでなく、ラストワンマイルの交通課題を解決する手段としても期待されている (Fishman 2016年)。\n\nFishman, Elliot. 2016年. 「Bikeshare: A Review of Recent Literature」. Transport Reviews 36 (1): 92–119. https://doi.org/10.1080/01441647.2015.1033036.\n\nEren, Emir, と Volkan Emre Uz. 2020年. 「A Review on Bike-Sharing: The Factors Affecting Bike-Sharing Demand」. Sustainable Cities and Society 54: 101882. https://doi.org/10.1016/j.scs.2019.101882.\n効率的な運営のためには、利用数の予測が不可欠である。気象条件や曜日・時間帯といった要因が利用パターンに大きく影響することが先行研究で示されている (Eren と Uz 2020年)。しかし、東京都内のシェアサイクルに特化した予測モデルの構築事例は限られており、地域特性を考慮した分析が求められている。",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
+    ]
+  },
+  {
+    "objectID": "01_研究概要.html#研究の目的",
+    "href": "01_研究概要.html#研究の目的",
+    "title": "1  研究概要",
+    "section": "1.3 研究の目的",
+    "text": "1.3 研究の目的\n本研究の目的は以下の通りである。\n\n東京都内のシェアサイクル利用データと気象データを用いて、時間帯別の利用数を予測するモデルを構築する\n線形回帰と回帰木（rpart）の予測精度を比較し、各手法の特性を明らかにする\n利用数に影響を与える要因を変数重要度分析により特定する",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
+    ]
+  },
+  {
+    "objectID": "01_研究概要.html#研究計画",
+    "href": "01_研究概要.html#研究計画",
+    "title": "1  研究概要",
+    "section": "1.4 研究計画",
+    "text": "1.4 研究計画\n\n\n\n表 1.1: 研究スケジュール\n\n\n\n\n\n期間\n作業内容\n状態\n\n\n\n\n第1-2週\nテーマ選定・先行研究調査\n完了\n\n\n第3-4週\nデータ収集・前処理\n完了\n\n\n第5-8週\nモデル構築・精度評価\n完了\n\n\n第9-10週\n結果分析・考察\n完了\n\n\n第11-12週\n報告書作成・発表準備\n進行中\n\n\n\n\n\n\n\n進捗チェックリスト\n\n先行研究の調査\nデータの取得と前処理\n探索的データ分析（EDA）\n予測モデルの構築\n精度評価と比較\n変数重要度の分析\n報告書の最終版作成\n発表資料の作成",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
+    ]
+  },
+  {
+    "objectID": "01_研究概要.html#研究体制",
+    "href": "01_研究概要.html#研究体制",
+    "title": "1  研究概要",
+    "section": "1.5 研究体制",
+    "text": "1.5 研究体制\n\n\n\n表 1.2: 研究体制\n\n\n\n\n\n項目\n内容\n\n\n\n\n所属\n東京国際大学 商学部 データサイエンスコース\n\n\n研究室\n竹田ゼミ（データアナリティクスゼミ）\n\n\n指導教員\n竹田 恒\n\n\n研究者\n氏名（学籍番号）\n\n\n研究期間\n2025年度 春学期\n\n\n使用言語\nR（4.1以上）\n\n\n主要パッケージ\nなし（基本パッケージのみ）",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
+    ]
+  },
+  {
+    "objectID": "02_データ.html",
+    "href": "02_データ.html",
+    "title": "2  データ",
+    "section": "",
+    "text": "2.1 データの出典",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データ</span>"
+    ]
+  },
+  {
+    "objectID": "02_データ.html#データの出典",
+    "href": "02_データ.html#データの出典",
+    "title": "2  データ",
+    "section": "",
+    "text": "表 2.1: データの出典\n\n\n\n\n\n\n\n\n\n項目\n内容\n\n\n\n\n利用データ\n東京都シェアサイクル事業オープンデータ（※実際の出典に置き換えてください）\n\n\n気象データ\n気象庁 過去の気象データ検索（※実際の出典に置き換えてください）\n\n\n取得日\n2025年○月○日\n\n\n前処理スクリプト\nsrc/generate_data.R",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データ</span>"
+    ]
+  },
+  {
+    "objectID": "02_データ.html#データの準備",
+    "href": "02_データ.html#データの準備",
+    "title": "2  データ",
+    "section": "2.2 データの準備",
+    "text": "2.2 データの準備",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データ</span>"
+    ]
+  },
+  {
+    "objectID": "02_データ.html#データ概要",
+    "href": "02_データ.html#データ概要",
+    "title": "2  データ",
+    "section": "2.3 データ概要",
+    "text": "2.3 データ概要\n本研究では、東京都内のシェアサイクル利用数と気象データを組み合わせた合成データセットを使用する。\n\n\n\n表 2.2: データセットの概要\n\n\n\n\n\n項目\n内容\n\n\n\n\n対象期間\n2024年1月1日 〜 2024年12月31日（365日間）\n\n\n時間粒度\n1時間単位\n\n\nレコード数\n8,760件（365日 × 24時間）\n\n\n目的変数\n1時間あたりの利用数（count）\n\n\n説明変数\n気温、湿度、風速、降雨有無、曜日、時間帯\n\n\n\n\n\n\n\n変数一覧\n\n\n\n表 2.3: 変数一覧\n\n\n\n\n\n変数名\n型\n説明\n単位\n\n\n\n\ndate\nDate\n日付\n-\n\n\nhour\ninteger\n時間帯（0–23）\n時\n\n\ntemperature\nnumeric\n気温\n°C\n\n\nhumidity\nnumeric\n相対湿度\n%\n\n\nwind_speed\nnumeric\n風速\nm/s\n\n\nis_rain\ninteger\n降雨フラグ（0/1）\n-\n\n\ncount\ninteger\n利用数（目的変数）\n台",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データ</span>"
+    ]
+  },
+  {
+    "objectID": "02_データ.html#基本統計量",
+    "href": "02_データ.html#基本統計量",
+    "title": "2  データ",
+    "section": "2.4 基本統計量",
+    "text": "2.4 基本統計量\n\n\n\n\n表 2.4: 基本統計量\n\n\n\n\n\n\n変数\n平均\n標準偏差\n最小\n中央値\n最大\n\n\n\n\ntemperature\n15.0\n9.0\n-6.1\n15.1\n36.0\n\n\nhumidity\n60.0\n13.4\n20.0\n60.0\n100.0\n\n\nwind_speed\n2.5\n1.8\n0.0\n2.1\n15.3\n\n\ncount\n63.8\n54.0\n0.0\n48.0\n277.0",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データ</span>"
+    ]
+  },
+  {
+    "objectID": "02_データ.html#時系列の可視化",
+    "href": "02_データ.html#時系列の可視化",
+    "title": "2  データ",
+    "section": "2.5 時系列の可視化",
+    "text": "2.5 時系列の可視化\n図 2.1 は日別の平均利用数の推移を示す。夏季に利用数が増加し、冬季に減少する季節パターンが確認できる。\n\n\n\n\n\n\n\n\n図 2.1: 日別平均利用数の推移",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データ</span>"
+    ]
+  },
+  {
+    "objectID": "02_データ.html#気象データとの関係",
+    "href": "02_データ.html#気象データとの関係",
+    "title": "2  データ",
+    "section": "2.6 気象データとの関係",
+    "text": "2.6 気象データとの関係\n図 2.2 は気温と利用数の関係を示す散布図である。気温が高いほど利用数が増加する正の相関が認められる。\n\n\n\n\n\n\n\n\n図 2.2: 気温と利用数の関係",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データ</span>"
+    ]
+  },
+  {
+    "objectID": "02_データ.html#曜日時間帯パターン",
+    "href": "02_データ.html#曜日時間帯パターン",
+    "title": "2  データ",
+    "section": "2.7 曜日・時間帯パターン",
+    "text": "2.7 曜日・時間帯パターン\n\n時間帯別曜日別\n\n\n\n\n\n\n\n\n\n\n図 2.3: 時間帯別の平均利用数\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n図 2.4: 曜日別の平均利用数",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データ</span>"
+    ]
+  },
+  {
+    "objectID": "02_データ.html#前処理パイプライン",
+    "href": "02_データ.html#前処理パイプライン",
+    "title": "2  データ",
+    "section": "2.8 前処理パイプライン",
+    "text": "2.8 前処理パイプライン\n\n\n\n\n\n\nflowchart LR\n    A[元データ取得] --&gt; B[欠損値処理]\n    B --&gt; C[特徴量生成]\n    C --&gt; D[時間帯・曜日&lt;br&gt;ダミー変数化]\n    D --&gt; E[訓練/テスト分割]\n    E --&gt; F[モデル入力]\n\n\n\n\n図 2.5: データ前処理パイプライン",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データ</span>"
+    ]
+  },
+  {
+    "objectID": "03_分析手法.html",
+    "href": "03_分析手法.html",
+    "title": "3  分析手法",
+    "section": "",
+    "text": "3.1 手法の選定\n本研究では、以下の2手法を比較する。ベースラインとして線形回帰を用い、非線形な関係を捉える手法として回帰木（rpart）(James ほか 2023年) を採用する。",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>分析手法</span>"
+    ]
+  },
+  {
+    "objectID": "03_分析手法.html#手法の選定",
+    "href": "03_分析手法.html#手法の選定",
+    "title": "3  分析手法",
+    "section": "",
+    "text": "表 3.1: 手法の比較\n\n\n\n\n\n\n\n\n\n\n\n手法\n特徴\n利点\n欠点\n\n\n\n\n線形回帰\n線形モデル\n解釈が容易、計算が高速\n非線形関係を捉えにくい\n\n\n回帰木（rpart）\n決定木ベースの再帰分割\n非線形対応、解釈が視覚的\n過学習リスク、不安定性",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>分析手法</span>"
+    ]
+  },
+  {
+    "objectID": "03_分析手法.html#線形回帰ベースライン",
+    "href": "03_分析手法.html#線形回帰ベースライン",
+    "title": "3  分析手法",
+    "section": "3.2 線形回帰（ベースライン）",
+    "text": "3.2 線形回帰（ベースライン）\n線形回帰モデルは、目的変数 \\(y\\) を説明変数 \\(\\mathbf{x} = (x_1, x_2, \\ldots, x_p)\\) の線形結合で表現する。\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\cdots + \\beta_p x_p + \\varepsilon\n\\tag{3.1}\\]\nここで \\(\\beta_0\\) は切片、\\(\\beta_1, \\ldots, \\beta_p\\) は回帰係数、\\(\\varepsilon\\) は誤差項である (James ほか 2023年)。",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>分析手法</span>"
+    ]
+  },
+  {
+    "objectID": "03_分析手法.html#回帰木rpart",
+    "href": "03_分析手法.html#回帰木rpart",
+    "title": "3  分析手法",
+    "section": "3.3 回帰木（rpart）",
+    "text": "3.3 回帰木（rpart）\n回帰木は、説明変数の空間を再帰的に分割し、各領域ごとに目的変数の平均値を予測するノンパラメトリック手法である (James ほか 2023年)。R の rpart パッケージはR に標準搭載されており、追加インストール不要で利用できる。\n\nJames, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, と Jonathan Taylor. 2023年. An Introduction to Statistical Learning: with Applications in R. 2nd 版. Springer. https://doi.org/10.1007/978-3-031-38747-0.\n\n分割の基準\n各ノードにおいて、残差二乗和（RSS）を最小化する分割点を探索する。\n\\[\n\\text{RSS} = \\sum_{x_i \\in R_1} (y_i - \\hat{y}_{R_1})^2 + \\sum_{x_i \\in R_2} (y_i - \\hat{y}_{R_2})^2\n\\tag{3.2}\\]\nここで \\(R_1, R_2\\) は分割後の2つの領域、\\(\\hat{y}_{R_k}\\) は各領域内の目的変数の平均値である。\n\n\n決定木の構造\n\n\n\n\n\n\nflowchart TD\n    A[\"気温 ≥ 20°C ?\"] --&gt;|Yes| B[\"時間帯 ∈ 通勤時間 ?\"]\n    A --&gt;|No| C[\"降雨あり ?\"]\n    B --&gt;|Yes| D[\"予測: 150台\"]\n    B --&gt;|No| E[\"予測: 90台\"]\n    C --&gt;|Yes| F[\"予測: 25台\"]\n    C --&gt;|No| G[\"予測: 55台\"]\n\n\n\n\n図 3.1: 決定木による分岐のイメージ\n\n\n\n\n\n\n\n剪定（Pruning）\n回帰木は深くなるほど訓練データに過学習する。これを防ぐため、コスト複雑度剪定（cost-complexity pruning）を行う。\n\\[\n\\text{Cost} = \\text{RSS} + \\alpha \\cdot |T|\n\\tag{3.3}\\]\nここで \\(|T|\\) は木の終端ノード数、\\(\\alpha\\) は複雑度パラメータ（cp）である。\\(\\alpha\\) が大きいほど単純な木が選ばれる。",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>分析手法</span>"
+    ]
+  },
+  {
+    "objectID": "03_分析手法.html#説明変数の設計",
+    "href": "03_分析手法.html#説明変数の設計",
+    "title": "3  分析手法",
+    "section": "3.4 説明変数の設計",
+    "text": "3.4 説明変数の設計\n\n\n\n表 3.2: 説明変数一覧\n\n\n\n\n\n変数名\n型\n説明\n変換\n\n\n\n\nhour\ninteger\n時間帯\nそのまま使用\n\n\ntemperature\nnumeric\n気温\nそのまま使用\n\n\nhumidity\nnumeric\n湿度\nそのまま使用\n\n\nwind_speed\nnumeric\n風速\nそのまま使用\n\n\nis_rain\ninteger\n降雨フラグ\nfactor 変換\n\n\nis_weekend\nlogical\n休日フラグ\nfactor 変換\n\n\nmonth\ninteger\n月\nfactor 変換",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>分析手法</span>"
+    ]
+  },
+  {
+    "objectID": "03_分析手法.html#分析パイプライン",
+    "href": "03_分析手法.html#分析パイプライン",
+    "title": "3  分析手法",
+    "section": "3.5 分析パイプライン",
+    "text": "3.5 分析パイプライン\n\n\n\n\n\n\nflowchart LR\n    A[データ読込] --&gt; B[前処理&lt;br&gt;factor変換]\n    B --&gt; C[訓練/テスト分割&lt;br&gt;80:20]\n    C --&gt; D[モデル学習]\n    D --&gt; E1[線形回帰&lt;br&gt;lm]\n    D --&gt; E2[回帰木&lt;br&gt;rpart]\n    E1 --&gt; F[精度評価&lt;br&gt;MAE/RMSE/R²]\n    E2 --&gt; F\n    F --&gt; G[変数重要度&lt;br&gt;分析]\n\n\n\n\n図 3.2: 分析パイプライン",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>分析手法</span>"
+    ]
+  },
+  {
+    "objectID": "03_分析手法.html#精度評価指標",
+    "href": "03_分析手法.html#精度評価指標",
+    "title": "3  分析手法",
+    "section": "3.6 精度評価指標",
+    "text": "3.6 精度評価指標\nモデルの予測精度を評価するため、以下の3指標を使用する。\n\n平均絶対誤差（MAE）\n\\[\n\\text{MAE} = \\frac{1}{n} \\sum_{i=1}^{n} |y_i - \\hat{y}_i|\n\\tag{3.4}\\]\n\n\n二乗平均平方根誤差（RMSE）\n\\[\n\\text{RMSE} = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2}\n\\tag{3.5}\\]\n\n\n決定係数（R²）\n\\[\nR^2 = 1 - \\frac{\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2}{\\sum_{i=1}^{n}(y_i - \\bar{y})^2}\n\\tag{3.6}\\]\nここで \\(y_i\\) は実測値、\\(\\hat{y}_i\\) は予測値、\\(\\bar{y}\\) は実測値の平均、\\(n\\) はサンプル数である。\n式 3.4 は外れ値に頑健な指標、式 3.5 は大きな誤差をより重く評価する指標、式 3.6 はモデルの説明力を0〜1で表す指標である。",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>分析手法</span>"
+    ]
+  },
+  {
+    "objectID": "03_分析手法.html#追加パッケージの利用発展",
+    "href": "03_分析手法.html#追加パッケージの利用発展",
+    "title": "3  分析手法",
+    "section": "3.7 追加パッケージの利用（発展）",
+    "text": "3.7 追加パッケージの利用（発展）\n本テンプレートはR の基本パッケージのみで動作するが、研究の目的に応じてより高度なパッケージを導入できる。\n\n\n\n\n\n\n重要パッケージの追加手順\n\n\n\n\nR コンソールで install.packages(\"パッケージ名\") を実行（初回のみ）\n.qmd ファイルのコードブロック内で library(パッケージ名) を記述\nquarto render で正常にビルドできることを確認\n\n\n\n\n代表的な追加パッケージ\n\n\n\n\n\n\n\n\nパッケージ\n用途\nインストール\n\n\n\n\ntidyverse\nデータ操作・可視化の統合環境\ninstall.packages(\"tidyverse\")\n\n\nrandomForest\nランダムフォレスト\ninstall.packages(\"randomForest\")\n\n\nlightgbm\n勾配ブースティング（LightGBM）\ninstall.packages(\"lightgbm\")\n\n\nplotly\nインタラクティブなグラフ\ninstall.packages(\"plotly\")\n\n\n\n\n\n使用例：LightGBM で回帰木を置き換える場合\n# 1. インストール（R コンソールで一度だけ実行）\ninstall.packages(\"lightgbm\")\n\n# 2. .qmd ファイル内で読み込んで使用\nlibrary(lightgbm)\n\ndtrain &lt;- lgb.Dataset(\n  data  = as.matrix(train_data[, -which(names(train_data) == \"count\")]),\n  label = train_data$count\n)\n\nparams &lt;- list(objective = \"regression\", metric = \"rmse\",\n               num_leaves = 31, learning_rate = 0.1)\n\nlgbm_fit &lt;- lgb.train(params, dtrain, nrounds = 500)\n\n\n\n\n\n\n警告注意\n\n\n\n\n追加パッケージを使う場合、quarto render 時にそのパッケージがインストール済みである必要がある\nエラーが出たら、まず install.packages(\"パッケージ名\") を実行してから再度 quarto render する\nGitHub Pages にデプロイする際、ビルドは自分の PC 上で行われるため、自分の PC にパッケージがあれば問題ない",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>分析手法</span>"
+    ]
+  },
+  {
+    "objectID": "04_結果と考察.html",
+    "href": "04_結果と考察.html",
+    "title": "4  結果と考察",
+    "section": "",
+    "text": "4.1 モデル学習\n第2章と同一のデータを読み込み、訓練データ（80%）とテストデータ（20%）に分割した。線形回帰（lm）と回帰木（rpart）の2モデルを学習させた。",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>結果と考察</span>"
+    ]
+  },
+  {
+    "objectID": "04_結果と考察.html#精度比較",
+    "href": "04_結果と考察.html#精度比較",
+    "title": "4  結果と考察",
+    "section": "4.2 精度比較",
+    "text": "4.2 精度比較\n表 4.1 に各モデルのテストデータに対する精度評価結果を示す。\n\n\n\n\n表 4.1: モデル精度の比較\n\n\n\n\n\n\nモデル\nMAE\nRMSE\nR²\n\n\n\n\n線形回帰\n39.59\n48.94\n0.19\n\n\n回帰木（rpart）\n18.46\n23.25\n0.82\n\n\n\n\n\n\n\n\n回帰木は全ての指標で線形回帰を上回っており、非線形な利用パターンの捕捉に有効であることが示された。",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>結果と考察</span>"
+    ]
+  },
+  {
+    "objectID": "04_結果と考察.html#予測結果の可視化",
+    "href": "04_結果と考察.html#予測結果の可視化",
+    "title": "4  結果と考察",
+    "section": "4.3 予測結果の可視化",
+    "text": "4.3 予測結果の可視化\n図 4.1 にテストデータの先頭200件における実測値と予測値の比較を示す。\n\n\n\n\n\n\n\n\n図 4.1: 実測値と予測値の比較（テストデータ先頭200件）",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>結果と考察</span>"
+    ]
+  },
+  {
+    "objectID": "04_結果と考察.html#誤差分析",
+    "href": "04_結果と考察.html#誤差分析",
+    "title": "4  結果と考察",
+    "section": "4.4 誤差分析",
+    "text": "4.4 誤差分析\n\n\n\n\n\n\n\n\n図 4.2: 予測誤差の分布\n\n\n\n\n\n図 4.2 より、回帰木の誤差分布は線形回帰と比べて中心（誤差ゼロ付近）に集中しており、予測のばらつきが小さいことが確認できる。",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>結果と考察</span>"
+    ]
+  },
+  {
+    "objectID": "04_結果と考察.html#変数重要度",
+    "href": "04_結果と考察.html#変数重要度",
+    "title": "4  結果と考察",
+    "section": "4.5 変数重要度",
+    "text": "4.5 変数重要度\n\n\n\n\n\n\n\n\n図 4.3: 回帰木の変数重要度\n\n\n\n\n\n図 4.3 より、hour（時間帯）と temperature（気温）が予測への寄与度が最も高い変数であることがわかる。",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>結果と考察</span>"
+    ]
+  },
+  {
+    "objectID": "04_結果と考察.html#曜日別精度",
+    "href": "04_結果と考察.html#曜日別精度",
+    "title": "4  結果と考察",
+    "section": "4.6 曜日別精度",
+    "text": "4.6 曜日別精度\n\nMAERMSE\n\n\n\n\n\n\n\n\n\n\n図 4.4: 曜日別 MAE（回帰木）\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n図 4.5: 曜日別 RMSE（回帰木）",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>結果と考察</span>"
+    ]
+  },
+  {
+    "objectID": "04_結果と考察.html#考察",
+    "href": "04_結果と考察.html#考察",
+    "title": "4  結果と考察",
+    "section": "4.7 考察",
+    "text": "4.7 考察\n本章の分析結果から、以下の考察が得られる。\n\nモデル性能について\n回帰木は線形回帰と比較して全ての評価指標で優れた性能を示した（表 4.1）。これは、シェアサイクルの利用パターンが時間帯や気象条件と非線形な関係を持つためと考えられる。例えば、通勤時間帯（7-9時、17-19時）に利用数が集中するパターンは、線形モデルでは捉えにくい。\n\n\n影響要因について\n変数重要度分析（図 4.3）から、以下の知見が得られた。\n\n時間帯（hour） が最も重要な変数であり、シェアサイクルの利用は通勤・通学の移動パターンに強く依存している\n気温（temperature） が2番目に重要であり、気象条件がシェアサイクルの利用判断に大きく影響する。先行研究 (Eren と Uz 2020年) の知見とも一致する\n降雨（is_rain） は利用数を大きく減少させる要因であり、需要予測において重要な変数である\n\n\nEren, Emir, と Volkan Emre Uz. 2020年. 「A Review on Bike-Sharing: The Factors Affecting Bike-Sharing Demand」. Sustainable Cities and Society 54: 101882. https://doi.org/10.1016/j.scs.2019.101882.\n\n\n先行研究との比較\nFanaee-T と Gama (2014年) が示したバイクシェアリングデータにおけるイベント検出の知見と同様に、気象条件と時間帯が利用パターンの主要な決定要因であることが確認された。また、Singhvi ほか (2015年) が報告した NYC Citi Bike の予測事例と比較しても、非線形手法の有効性は同様の傾向を示している。\n\n\n\nFanaee-T, Hadi, と João Gama. 2014年. 「Event Labeling Combining Ensemble Detectors and Background Knowledge」. Progress in Artificial Intelligence 2 (2–3): 113–27. https://doi.org/10.1007/s13748-013-0040-3.\n\nSinghvi, Divya, Somya Singhvi, Peter I. Frazier, ほか. 2015年. 「Predicting Bike-Share Usage in Practice: NYC Citi Bike Case Study」. INFORMS Transportation Science and Logistics Society Workshop.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>結果と考察</span>"
+    ]
+  },
+  {
+    "objectID": "05_まとめ.html",
+    "href": "05_まとめ.html",
+    "title": "5  まとめ",
+    "section": "",
+    "text": "5.1 研究成果の要約\n本研究では、東京都内のシェアサイクル利用数を予測するモデルの構築を行い、以下の成果を得た。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>まとめ</span>"
+    ]
+  },
+  {
+    "objectID": "05_まとめ.html#研究成果の要約",
+    "href": "05_まとめ.html#研究成果の要約",
+    "title": "5  まとめ",
+    "section": "",
+    "text": "データの特性把握： シェアサイクルの利用数は気温・降雨・曜日・時間帯によって大きく変動することを確認した。特に気温との正の相関と、降雨時の利用数減少が顕著であった。\n予測モデルの構築と比較： 線形回帰と回帰木（rpart）の2手法でモデルを構築し、回帰木が全ての評価指標で優れた精度を示した。回帰木のRMSEは線形回帰と比較して改善が得られた。\n影響要因の特定： 変数重要度分析により、時間帯（hour）と気温（temperature）が利用数の予測に最も寄与する変数であることを明らかにした。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>まとめ</span>"
+    ]
+  },
+  {
+    "objectID": "05_まとめ.html#研究の限界",
+    "href": "05_まとめ.html#研究の限界",
+    "title": "5  まとめ",
+    "section": "5.2 研究の限界",
+    "text": "5.2 研究の限界\n本研究には以下の限界がある。\n\n合成データの使用： 本テンプレートでは分析手法の実演を目的として合成データを使用している。実際の研究では、自治体やサービス事業者が公開する実データを用いる必要がある。\n空間的要因の未考慮： ステーションの立地（駅からの距離、オフィス街かどうか等）を変数に含めていない。\nモデルの単純さ： 回帰木の剪定パラメータのチューニングを最小限に留めており、ランダムフォレストや勾配ブースティング等のアンサンブル手法で精度向上の余地がある。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>まとめ</span>"
+    ]
+  },
+  {
+    "objectID": "05_まとめ.html#今後の課題",
+    "href": "05_まとめ.html#今後の課題",
+    "title": "5  まとめ",
+    "section": "5.3 今後の課題",
+    "text": "5.3 今後の課題\n\n実データ（自治体オープンデータ等）を用いた分析の実施\nステーション別の利用予測モデルの構築\nランダムフォレストや勾配ブースティング等の高度な手法との比較\nリアルタイム予測システムのプロトタイプ開発\n需要予測に基づく最適な自転車再配置アルゴリズムの検討",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>まとめ</span>"
+    ]
+  },
+  {
+    "objectID": "05_まとめ.html#謝辞",
+    "href": "05_まとめ.html#謝辞",
+    "title": "5  まとめ",
+    "section": "5.4 謝辞",
+    "text": "5.4 謝辞\n本研究を進めるにあたり、丁寧なご指導をいただいた竹田恒先生に深く感謝いたします。また、データサイエンスコースの同期の皆さんとの議論は、研究の方向性を考える上で大変参考になりました。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>まとめ</span>"
+    ]
+  }
+]
