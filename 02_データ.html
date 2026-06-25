@@ -187,9 +187,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#データの準備" id="toc-データの準備" class="nav-link" data-scroll-target="#データの準備">データの準備</a></li>
   <li><a href="#データ概要" id="toc-データ概要" class="nav-link" data-scroll-target="#データ概要">データ概要</a></li>
   <li><a href="#基本統計量" id="toc-基本統計量" class="nav-link" data-scroll-target="#基本統計量">基本統計量</a></li>
-  <li><a href="#時系列の可視化" id="toc-時系列の可視化" class="nav-link" data-scroll-target="#時系列の可視化">時系列の可視化</a></li>
-  <li><a href="#気象データとの関係" id="toc-気象データとの関係" class="nav-link" data-scroll-target="#気象データとの関係">気象データとの関係</a></li>
-  <li><a href="#曜日時間帯パターン" id="toc-曜日時間帯パターン" class="nav-link" data-scroll-target="#曜日時間帯パターン">曜日・時間帯パターン</a></li>
+  <li><a href="#勝敗別の集計" id="toc-勝敗別の集計" class="nav-link" data-scroll-target="#勝敗別の集計">勝敗別の集計</a></li>
+  <li><a href="#可視化" id="toc-可視化" class="nav-link" data-scroll-target="#可視化">可視化</a></li>
   <li><a href="#前処理パイプライン" id="toc-前処理パイプライン" class="nav-link" data-scroll-target="#前処理パイプライン">前処理パイプライン</a></li>
   </ul>
 </nav>
@@ -216,75 +215,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled" title="書き方ガイド：データ">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">ヒント</span>書き方ガイド：データ
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>何を書くか：</strong> 分析に使用するデータの全体像を示す章です。データの出典・構造・基本統計量・可視化を通じて、読者がデータを十分に理解できるようにします。</p>
-<p><strong>書き方のコツ：</strong></p>
-<ul>
-<li><strong>データ概要</strong> では、取得元・期間・サンプル数・変数の一覧を明示します</li>
-<li><strong>基本統計量</strong> は表形式で整理し、データの分布を把握できるようにします</li>
-<li><strong>可視化</strong> は目的を明確にして（例：「時系列の傾向を確認する」）、図にキャプションと番号を付けます</li>
-<li>前処理の手順はフロー図で示すと理解しやすくなります</li>
-</ul>
-<p><strong>Quartoの機能：</strong></p>
-<ul>
-<li>R コードブロック <code>```{r}</code> でデータ処理と可視化を実行できます</li>
-<li><code>#| label: fig-xxx</code> と <code>#| fig-cap:</code> で図番号とキャプションを自動付与します</li>
-<li><code>@fig-xxx</code> で本文中からクロスリファレンスできます</li>
-<li><code>::: {.panel-tabset}</code> でタブ切替パネルを作成できます</li>
-<li>Mermaid 記法でフロー図を描けます</li>
-</ul>
-</div>
-</div>
 <section id="データの出典" class="level2">
 <h2 class="anchored" data-anchor-id="データの出典">データの出典</h2>
-<div id="tbl-data-source" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-data-source-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;1: データの出典
-</figcaption>
-<div aria-describedby="tbl-data-source-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>項目</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>利用データ</td>
-<td>東京都シェアサイクル事業オープンデータ（※実際の出典に置き換えてください）</td>
-</tr>
-<tr class="even">
-<td>気象データ</td>
-<td>気象庁 過去の気象データ検索（※実際の出典に置き換えてください）</td>
-</tr>
-<tr class="odd">
-<td>取得日</td>
-<td>2025年○月○日</td>
-</tr>
-<tr class="even">
-<td>前処理スクリプト</td>
-<td><code>src/generate_data.R</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
+<p>本分析では、野球の試合スコアから手動で読み取ったデータを使用しています。 対象は20試合分であり、各試合における投手の投球内容と試合結果を記録しています。</p>
 </section>
 <section id="データの準備" class="level2">
 <h2 class="anchored" data-anchor-id="データの準備">データの準備</h2>
@@ -292,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["Opponent"],"name":[1],"type":["int"],"align":["right"]},{"label":["Total_Pitches"],"name":[2],"type":["int"],"align":["right"]},{"label":["Strikes"],"name":[3],"type":["int"],"align":["right"]},{"label":["Balls"],"name":[4],"type":["int"],"align":["right"]},{"label":["error"],"name":[5],"type":["int"],"align":["right"]},{"label":["Walks"],"name":[6],"type":["int"],"align":["right"]},{"label":["Strikeouts"],"name":[7],"type":["int"],"align":["right"]},{"label":["Hits_Allowed"],"name":[8],"type":["int"],"align":["right"]},{"label":["Result"],"name":[9],"type":["chr"],"align":["left"]},{"label":["Strike_Rate"],"name":[10],"type":["chr"],"align":["left"]},{"label":["Win_Flag"],"name":[11],"type":["int"],"align":["right"]}],"data":[{"1":"1","2":"119","3":"68","4":"51","5":"0","6":"3","7":"3","8":"4","9":"W","10":"57.10%","11":"1"},{"1":"2","2":"142","3":"82","4":"60","5":"3","6":"4","7":"4","8":"13","9":"L","10":"57.70%","11":"0"},{"1":"3","2":"125","3":"76","4":"49","5":"2","6":"5","7":"5","8":"3","9":"W","10":"60.80%","11":"1"},{"1":"4","2":"115","3":"61","4":"54","5":"1","6":"3","7":"1","8":"7","9":"L","10":"53.00%","11":"0"},{"1":"5","2":"123","3":"69","4":"54","5":"2","6":"5","7":"4","8":"5","9":"W","10":"56.10%","11":"1"},{"1":"6","2":"100","3":"55","4":"45","5":"0","6":"1","7":"3","8":"6","9":"L","10":"55.00%","11":"0"},{"1":"7","2":"93","3":"60","4":"33","5":"1","6":"8","7":"0","8":"5","9":"W","10":"64.50%","11":"1"},{"1":"8","2":"149","3":"81","4":"68","5":"3","6":"5","7":"2","8":"7","9":"W","10":"54.40%","11":"1"},{"1":"9","2":"119","3":"94","4":"25","5":"1","6":"4","7":"2","8":"8","9":"W","10":"79.00%","11":"1"},{"1":"10","2":"151","3":"86","4":"65","5":"6","6":"6","7":"0","8":"13","9":"L","10":"57.00%","11":"0"},{"1":"11","2":"129","3":"67","4":"62","5":"2","6":"1","7":"4","8":"11","9":"L","10":"51.90%","11":"0"},{"1":"12","2":"131","3":"75","4":"56","5":"1","6":"6","7":"0","8":"8","9":"L","10":"57.30%","11":"0"},{"1":"13","2":"63","3":"48","4":"15","5":"0","6":"0","7":"3","8":"3","9":"W","10":"76.20%","11":"1"},{"1":"14","2":"86","3":"57","4":"29","5":"0","6":"0","7":"3","8":"3","9":"W","10":"66.30%","11":"1"},{"1":"15","2":"107","3":"59","4":"48","5":"0","6":"3","7":"0","8":"6","9":"W","10":"55.10%","11":"1"},{"1":"16","2":"108","3":"76","4":"32","5":"2","6":"2","7":"2","8":"9","9":"W","10":"70.40%","11":"1"},{"1":"17","2":"104","3":"62","4":"42","5":"1","6":"2","7":"0","8":"0","9":"L","10":"59.60%","11":"0"},{"1":"18","2":"124","3":"72","4":"52","5":"1","6":"1","7":"4","8":"6","9":"L","10":"58.10%","11":"0"},{"1":"19","2":"94","3":"55","4":"39","5":"0","6":"2","7":"0","8":"4","9":"L","10":"58.50%","11":"0"},{"1":"20","2":"132","3":"80","4":"52","5":"1","6":"1","7":"6","8":"8","9":"L","10":"60.60%","11":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["Opponent"],"name":[1],"type":["int"],"align":["right"]},{"label":["Total_Pitches"],"name":[2],"type":["int"],"align":["right"]},{"label":["Strikes"],"name":[3],"type":["int"],"align":["right"]},{"label":["Balls"],"name":[4],"type":["int"],"align":["right"]},{"label":["error"],"name":[5],"type":["int"],"align":["right"]},{"label":["Walks"],"name":[6],"type":["int"],"align":["right"]},{"label":["Strikeouts"],"name":[7],"type":["int"],"align":["right"]},{"label":["Hits_Allowed"],"name":[8],"type":["int"],"align":["right"]},{"label":["Result"],"name":[9],"type":["chr"],"align":["left"]},{"label":["Strike_Rate"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["Win_Flag"],"name":[11],"type":["int"],"align":["right"]}],"data":[{"1":"1","2":"119","3":"68","4":"51","5":"0","6":"3","7":"3","8":"4","9":"W","10":"0.57","11":"1"},{"1":"2","2":"142","3":"82","4":"60","5":"3","6":"4","7":"4","8":"13","9":"L","10":"0.58","11":"0"},{"1":"3","2":"125","3":"76","4":"49","5":"2","6":"5","7":"5","8":"3","9":"W","10":"0.61","11":"1"},{"1":"4","2":"115","3":"61","4":"54","5":"1","6":"3","7":"1","8":"7","9":"L","10":"0.53","11":"0"},{"1":"5","2":"123","3":"69","4":"54","5":"2","6":"5","7":"4","8":"5","9":"W","10":"0.56","11":"1"},{"1":"6","2":"100","3":"55","4":"45","5":"0","6":"1","7":"3","8":"6","9":"L","10":"0.55","11":"0"},{"1":"7","2":"93","3":"60","4":"33","5":"1","6":"8","7":"0","8":"5","9":"W","10":"0.65","11":"1"},{"1":"8","2":"149","3":"81","4":"68","5":"3","6":"5","7":"2","8":"7","9":"W","10":"0.54","11":"1"},{"1":"9","2":"119","3":"94","4":"25","5":"1","6":"4","7":"2","8":"8","9":"W","10":"0.79","11":"1"},{"1":"10","2":"151","3":"86","4":"65","5":"6","6":"6","7":"0","8":"13","9":"L","10":"0.57","11":"0"},{"1":"11","2":"129","3":"67","4":"62","5":"2","6":"1","7":"4","8":"11","9":"L","10":"0.52","11":"0"},{"1":"12","2":"131","3":"75","4":"56","5":"1","6":"6","7":"0","8":"8","9":"L","10":"0.57","11":"0"},{"1":"13","2":"63","3":"48","4":"15","5":"0","6":"0","7":"3","8":"3","9":"W","10":"0.76","11":"1"},{"1":"14","2":"86","3":"57","4":"29","5":"0","6":"0","7":"3","8":"3","9":"W","10":"0.66","11":"1"},{"1":"15","2":"107","3":"59","4":"48","5":"0","6":"3","7":"0","8":"6","9":"W","10":"0.55","11":"1"},{"1":"16","2":"108","3":"76","4":"32","5":"2","6":"2","7":"2","8":"9","9":"W","10":"0.70","11":"1"},{"1":"17","2":"104","3":"62","4":"42","5":"1","6":"2","7":"0","8":"0","9":"L","10":"0.60","11":"0"},{"1":"18","2":"124","3":"72","4":"52","5":"1","6":"1","7":"4","8":"6","9":"L","10":"0.58","11":"0"},{"1":"19","2":"94","3":"55","4":"39","5":"0","6":"2","7":"0","8":"4","9":"L","10":"0.59","11":"0"},{"1":"20","2":"132","3":"80","4":"52","5":"1","6":"1","7":"6","8":"8","9":"L","10":"0.61","11":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
@@ -300,11 +233,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="データ概要" class="level2">
 <h2 class="anchored" data-anchor-id="データ概要">データ概要</h2>
-<p>本研究では、東京都内のシェアサイクル利用数と気象データを組み合わせた合成データセットを使用する。</p>
+<p>本研究では、スコアブックから読み取った投手の投球データを用います。 目的変数は試合の勝敗（<code>Win_Flag</code>）であり、投球内容を示す各種指標を説明変数として使用します。</p>
 <div id="tbl-data-overview" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-data-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;2: データセットの概要
+表&nbsp;1: データセットの概要
 </figcaption>
 <div aria-describedby="tbl-data-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -316,24 +249,20 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>対象期間</td>
-<td>2024年1月1日 〜 2024年12月31日（365日間）</td>
+<td>データ出典</td>
+<td>試合スコアの手動読み取り</td>
 </tr>
 <tr class="even">
-<td>時間粒度</td>
-<td>1時間単位</td>
-</tr>
-<tr class="odd">
 <td>レコード数</td>
-<td>8,760件（365日 × 24時間）</td>
-</tr>
-<tr class="even">
-<td>目的変数</td>
-<td>1時間あたりの利用数（count）</td>
+<td>20試合</td>
 </tr>
 <tr class="odd">
-<td>説明変数</td>
-<td>気温、湿度、風速、降雨有無、曜日、時間帯</td>
+<td>目的変数</td>
+<td>勝敗フラグ（Win_Flag：勝ち = 1、負け = 0）</td>
+</tr>
+<tr class="even">
+<td>主な説明変数</td>
+<td>総投球数、ストライク数、ボール数、ストライク率など</td>
 </tr>
 </tbody>
 </table>
@@ -345,7 +274,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="tbl-variables" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-variables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;3: 変数一覧
+表&nbsp;2: 変数一覧
 </figcaption>
 <div aria-describedby="tbl-variables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -354,51 +283,63 @@ ul.task-list li input[type="checkbox"] {
 <th>変数名</th>
 <th>型</th>
 <th>説明</th>
-<th>単位</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>date</code></td>
-<td>Date</td>
-<td>日付</td>
-<td>-</td>
+<td><code>Opponent</code></td>
+<td>integer</td>
+<td>対戦相手番号（1〜20）</td>
 </tr>
 <tr class="even">
-<td><code>hour</code></td>
+<td><code>Total_Pitches</code></td>
 <td>integer</td>
-<td>時間帯（0–23）</td>
-<td>時</td>
+<td>総投球数</td>
 </tr>
 <tr class="odd">
-<td><code>temperature</code></td>
-<td>numeric</td>
-<td>気温</td>
-<td>°C</td>
+<td><code>Strikes</code></td>
+<td>integer</td>
+<td>ストライク数</td>
 </tr>
 <tr class="even">
-<td><code>humidity</code></td>
-<td>numeric</td>
-<td>相対湿度</td>
-<td>%</td>
+<td><code>Balls</code></td>
+<td>integer</td>
+<td>ボール数</td>
 </tr>
 <tr class="odd">
-<td><code>wind_speed</code></td>
-<td>numeric</td>
-<td>風速</td>
-<td>m/s</td>
+<td><code>error</code></td>
+<td>integer</td>
+<td>エラー数</td>
 </tr>
 <tr class="even">
-<td><code>is_rain</code></td>
+<td><code>Walks</code></td>
 <td>integer</td>
-<td>降雨フラグ（0/1）</td>
-<td>-</td>
+<td>四死球数</td>
 </tr>
 <tr class="odd">
-<td><code>count</code></td>
+<td><code>Strikeouts</code></td>
 <td>integer</td>
-<td>利用数（目的変数）</td>
-<td>台</td>
+<td>三振数</td>
+</tr>
+<tr class="even">
+<td><code>Hits_Allowed</code></td>
+<td>integer</td>
+<td>被安打数</td>
+</tr>
+<tr class="odd">
+<td><code>Result</code></td>
+<td>character</td>
+<td>試合結果（W：勝ち、L：負け）</td>
+</tr>
+<tr class="even">
+<td><code>Strike_Rate</code></td>
+<td>numeric</td>
+<td>ストライク率（Strikes ÷ Total_Pitches）</td>
+</tr>
+<tr class="odd">
+<td><code>Win_Flag</code></td>
+<td>integer</td>
+<td>勝敗フラグ（勝ち = 1、負け = 0）</td>
 </tr>
 </tbody>
 </table>
@@ -410,10 +351,24 @@ ul.task-list li input[type="checkbox"] {
 <section id="基本統計量" class="level2">
 <h2 class="anchored" data-anchor-id="基本統計量">基本統計量</h2>
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
 <div id="tbl-summary-stats" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-summary-stats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-表&nbsp;4: 基本統計量
+表&nbsp;3: 数値変数の基本統計量
 </figcaption>
 <div aria-describedby="tbl-summary-stats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -423,43 +378,75 @@ ul.task-list li input[type="checkbox"] {
 <th style="text-align: left;">変数</th>
 <th style="text-align: right;">平均</th>
 <th style="text-align: right;">標準偏差</th>
-<th style="text-align: right;">最小</th>
+<th style="text-align: right;">最小値</th>
 <th style="text-align: right;">中央値</th>
-<th style="text-align: right;">最大</th>
+<th style="text-align: right;">最大値</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">temperature</td>
-<td style="text-align: right;">15.0</td>
-<td style="text-align: right;">9.0</td>
-<td style="text-align: right;">-6.1</td>
-<td style="text-align: right;">15.1</td>
-<td style="text-align: right;">36.0</td>
+<td style="text-align: left;">Total_Pitches</td>
+<td style="text-align: right;">115.70</td>
+<td style="text-align: right;">21.91</td>
+<td style="text-align: right;">63.00</td>
+<td style="text-align: right;">119.00</td>
+<td style="text-align: right;">151.00</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">humidity</td>
-<td style="text-align: right;">60.0</td>
-<td style="text-align: right;">13.4</td>
-<td style="text-align: right;">20.0</td>
-<td style="text-align: right;">60.0</td>
-<td style="text-align: right;">100.0</td>
+<td style="text-align: left;">Strikes</td>
+<td style="text-align: right;">69.15</td>
+<td style="text-align: right;">12.07</td>
+<td style="text-align: right;">48.00</td>
+<td style="text-align: right;">68.50</td>
+<td style="text-align: right;">94.00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">wind_speed</td>
-<td style="text-align: right;">2.5</td>
-<td style="text-align: right;">1.8</td>
-<td style="text-align: right;">0.0</td>
-<td style="text-align: right;">2.1</td>
-<td style="text-align: right;">15.3</td>
+<td style="text-align: left;">Balls</td>
+<td style="text-align: right;">46.55</td>
+<td style="text-align: right;">14.05</td>
+<td style="text-align: right;">15.00</td>
+<td style="text-align: right;">50.00</td>
+<td style="text-align: right;">68.00</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">count</td>
-<td style="text-align: right;">63.8</td>
-<td style="text-align: right;">54.0</td>
-<td style="text-align: right;">0.0</td>
-<td style="text-align: right;">48.0</td>
-<td style="text-align: right;">277.0</td>
+<td style="text-align: left;">error</td>
+<td style="text-align: right;">1.35</td>
+<td style="text-align: right;">1.46</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">6.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Walks</td>
+<td style="text-align: right;">3.10</td>
+<td style="text-align: right;">2.22</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">3.00</td>
+<td style="text-align: right;">8.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Strikeouts</td>
+<td style="text-align: right;">2.30</td>
+<td style="text-align: right;">1.89</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">2.50</td>
+<td style="text-align: right;">6.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hits_Allowed</td>
+<td style="text-align: right;">6.45</td>
+<td style="text-align: right;">3.36</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">6.00</td>
+<td style="text-align: right;">13.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Strike_Rate</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">0.52</td>
+<td style="text-align: right;">0.58</td>
+<td style="text-align: right;">0.79</td>
 </tr>
 </tbody>
 </table>
@@ -469,81 +456,74 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="時系列の可視化" class="level2">
-<h2 class="anchored" data-anchor-id="時系列の可視化">時系列の可視化</h2>
-<p><a href="#fig-timeseries" class="quarto-xref">図&nbsp;<span>1</span></a> は日別の平均利用数の推移を示す。夏季に利用数が増加し、冬季に減少する季節パターンが確認できる。</p>
+<section id="勝敗別の集計" class="level2">
+<h2 class="anchored" data-anchor-id="勝敗別の集計">勝敗別の集計</h2>
+<div class="cell">
+<div id="tbl-by-result" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-by-result-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+表&nbsp;4: 勝敗別のストライク率（平均・標準偏差）
+</figcaption>
+<div aria-describedby="tbl-by-result-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["Result"],"name":[1],"type":["chr"],"align":["left"]},{"label":["試合数"],"name":[2],"type":["int"],"align":["right"]},{"label":["平均ストライク率"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["標準偏差"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"W","2":"10","3":"0.639","4":"0.089"},{"1":"L","2":"10","3":"0.570","4":"0.029"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="可視化" class="level2">
+<h2 class="anchored" data-anchor-id="可視化">可視化</h2>
+<section id="勝敗別ストライク率の分布" class="level3">
+<h3 class="anchored" data-anchor-id="勝敗別ストライク率の分布">勝敗別ストライク率の分布</h3>
+<p><a href="#fig-boxplot" class="quarto-xref">図&nbsp;<span>1</span></a> は、勝敗ごとのストライク率の分布を箱ひげ図で示したものです。 勝利試合では敗戦試合よりもストライク率が高い傾向があるか確認します。</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-timeseries" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-timeseries-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="02_データ_files/figure-html/fig-timeseries-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="図&nbsp;1: 日別平均利用数の推移"><img src="02_データ_files/figure-html/fig-timeseries-1.png" class="img-fluid figure-img" width="672"></a>
+<div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="02_データ_files/figure-html/fig-boxplot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="図&nbsp;1: 勝敗別ストライク率の分布（箱ひげ図）"><img src="02_データ_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timeseries-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;1: 日別平均利用数の推移
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+図&nbsp;1: 勝敗別ストライク率の分布（箱ひげ図）
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="気象データとの関係" class="level2">
-<h2 class="anchored" data-anchor-id="気象データとの関係">気象データとの関係</h2>
-<p><a href="#fig-scatter-temp" class="quarto-xref">図&nbsp;<span>2</span></a> は気温と利用数の関係を示す散布図である。気温が高いほど利用数が増加する正の相関が認められる。</p>
+<section id="各変数の勝敗別平均" class="level3">
+<h3 class="anchored" data-anchor-id="各変数の勝敗別平均">各変数の勝敗別平均</h3>
+<p><span class="quarto-unresolved-ref">?fig-barplots</span> は、主要な投球指標を勝敗別に比較した棒グラフです。</p>
 <div class="cell">
-<div class="cell-output-display">
-<div id="fig-scatter-temp" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-scatter-temp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="02_データ_files/figure-html/fig-scatter-temp-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="図&nbsp;2: 気温と利用数の関係"><img src="02_データ_files/figure-html/fig-scatter-temp-1.png" class="img-fluid figure-img" width="672"></a>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There was 1 warning in `summarise()`.
+ℹ In argument: `across(all_of(vars_plot), mean, na.rm = TRUE)`.
+ℹ In group 1: `Result = "L"`.
+Caused by warning:
+! The `...` argument of `across()` is deprecated as of dplyr 1.1.0.
+Supply arguments directly to `.fns` through an anonymous function instead.
+
+  # Previously
+  across(a:b, mean, na.rm = TRUE)
+
+  # Now
+  across(a:b, \(x) mean(x, na.rm = TRUE))</code></pre>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter-temp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;2: 気温と利用数の関係
-</figcaption>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="02_データ_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="02_データ_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></a></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="曜日時間帯パターン" class="level2">
-<h2 class="anchored" data-anchor-id="曜日時間帯パターン">曜日・時間帯パターン</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">時間帯別</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">曜日別</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-hourly-pattern" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-hourly-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="02_データ_files/figure-html/fig-hourly-pattern-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="図&nbsp;3: 時間帯別の平均利用数"><img src="02_データ_files/figure-html/fig-hourly-pattern-1.png" class="img-fluid figure-img" width="672"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hourly-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;3: 時間帯別の平均利用数
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-wday-pattern" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-wday-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="02_データ_files/figure-html/fig-wday-pattern-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="図&nbsp;4: 曜日別の平均利用数"><img src="02_データ_files/figure-html/fig-wday-pattern-1.png" class="img-fluid figure-img" width="672"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wday-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;4: 曜日別の平均利用数
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 <section id="前処理パイプライン" class="level2">
 <h2 class="anchored" data-anchor-id="前処理パイプライン">前処理パイプライン</h2>
@@ -554,16 +534,16 @@ ul.task-list li input[type="checkbox"] {
 <div aria-describedby="fig-preprocess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
 <pre class="mermaid mermaid-js" data-label="fig-preprocess">flowchart LR
-    A[元データ取得] --&gt; B[欠損値処理]
-    B --&gt; C[特徴量生成]
-    C --&gt; D[時間帯・曜日&lt;br&gt;ダミー変数化]
-    D --&gt; E[訓練/テスト分割]
-    E --&gt; F[モデル入力]
+    A[スコアブック読み取り] --&gt; B[CSVファイル作成]
+    B --&gt; C[欠損値確認]
+    C --&gt; D[変数の型確認]
+    D --&gt; E[基本統計量の算出]
+    E --&gt; F[可視化・分析]
 </pre>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preprocess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;5: データ前処理パイプライン
+図&nbsp;2: データ前処理パイプライン
 </figcaption>
 </figure>
 </div>
