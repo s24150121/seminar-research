@@ -200,7 +200,7 @@
     "href": "02_データ.html#可視化",
     "title": "データ",
     "section": "可視化",
-    "text": "可視化\n\n勝敗別ストライク率の分布\n図 1 は、勝敗ごとのストライク率の分布を箱ひげ図で示したものです。 勝利試合では敗戦試合よりもストライク率が高い傾向があるか確認します。\n\n\n\n\n\n\n\n\n図 1: 勝敗別ストライク率の分布（箱ひげ図）\n\n\n\n\n\n\n\n各変数の勝敗別平均\n?fig-barplots は、主要な投球指標を勝敗別に比較した棒グラフです。\n\n\nWarning: There was 1 warning in `summarise()`.\nℹ In argument: `across(all_of(vars_plot), mean, na.rm = TRUE)`.\nℹ In group 1: `Result = \"L\"`.\nCaused by warning:\n! The `...` argument of `across()` is deprecated as of dplyr 1.1.0.\nSupply arguments directly to `.fns` through an anonymous function instead.\n\n  # Previously\n  across(a:b, mean, na.rm = TRUE)\n\n  # Now\n  across(a:b, \\(x) mean(x, na.rm = TRUE))",
+    "text": "可視化\n\n勝敗別ストライク率の分布\n図 2.1 は、勝敗ごとのストライク率の分布を箱ひげ図で示したものです。 勝利試合では敗戦試合よりもストライク率が高い傾向があるか確認します。\n\n\n\n\n\n\n\n\n図 1: 勝敗別ストライク率の分布（箱ひげ図）\n\n\n\n\n\n\n\n各変数の勝敗別平均\n?fig-barplots は、主要な投球指標を勝敗別に比較した棒グラフです。\n\n\nWarning: There was 1 warning in `summarise()`.\nℹ In argument: `across(all_of(vars_plot), mean, na.rm = TRUE)`.\nℹ In group 1: `Result = \"L\"`.\nCaused by warning:\n! The `...` argument of `across()` is deprecated as of dplyr 1.1.0.\nSupply arguments directly to `.fns` through an anonymous function instead.\n\n  # Previously\n  across(a:b, mean, na.rm = TRUE)\n\n  # Now\n  across(a:b, \\(x) mean(x, na.rm = TRUE))",
     "crumbs": [
       "データ"
     ]
@@ -216,14 +216,36 @@
     ]
   },
   {
-    "objectID": "descriptive.html",
-    "href": "descriptive.html",
-    "title": "2  descriptive",
+    "objectID": "データの可視化.html",
+    "href": "データの可視化.html",
+    "title": "2  データの可視化",
     "section": "",
-    "text": "2.1 データの出典\nすべてソフトボールのスコア20試合分から\nnum [1:20] 0.57 0.58 0.61 0.53 0.56 0.55 0.65 0.54 0.79 0.57 ...\n変数\n平均\n標準偏差\n最小\n中央値\n最大\n\n\n\n\nTotal_Pitches\n115.7\n21.9\n63\n119.0\n151\n\n\nStrikes\n69.2\n12.1\n48\n68.5\n94\n\n\nBalls\n46.5\n14.1\n15\n50.0\n68\nこのグラフからストライク率が1番低く被安打の数が一番多い試合は負けていることがわかる。\nストライク率が一番高い試合は被安打の数はそれなりに多いが試合には勝っていることがわかる。\n[1] \"numeric\"\n\n\n num [1:20] 0.57 0.58 0.61 0.53 0.56 0.55 0.65 0.54 0.79 0.57 ...\nこの箱ひげ図から勝利した試合ではストライク率が高い傾向がある。\n負けた試合は箱が小さいことから負け試合ではストライク率が低い状態だということがわかる。\n[1] \"data.frame\"\n\n\n[1] 20 11",
+    "text": "2.1 データの出典\nすべてソフトボールのスコア20試合分から\nnum [1:20] 0.57 0.58 0.61 0.53 0.56 0.55 0.65 0.54 0.79 0.57 ...\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union",
     "crumbs": [
       "データ",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>descriptive</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データの可視化</span>"
+    ]
+  },
+  {
+    "objectID": "データの可視化.html#可視化",
+    "href": "データの可視化.html#可視化",
+    "title": "2  データの可視化",
+    "section": "2.2 可視化",
+    "text": "2.2 可視化\n\n勝敗別ストライク率の分布\n図 2.1 は、勝敗ごとのストライク率の分布を箱ひげ図で示したものです。 勝利試合では敗戦試合よりもストライク率が高い傾向があるか確認します。\n\n\n\n\n\n\n\n\n図 2.1: 勝敗別ストライク率の分布（箱ひげ図）\n\n\n\n\n\n\n\nストライク率と被安打の関係（散布図）\n(plot?) は、ストライク率と被安打数の関係を散布図にしたものです。\n\n\n\n\n\nストライク率と被安打（散布図）\n\n\n\n\n(plot?) からストライク率が1番低く被安打の数が一番多い試合は負けていることがわかる。\nストライク率が一番高い試合は被安打の数はそれなりに多いが試合には勝っていることがわかる。\n\n\n\n\n\n\n\n\n\nこの箱ひげ図から勝利した試合ではストライク率が高い傾向がある。\n負けた試合は箱が小さいことから負け試合ではストライク率が低い状態だということがわかる。",
+    "crumbs": [
+      "データ",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データの可視化</span>"
+    ]
+  },
+  {
+    "objectID": "データの可視化.html#前処理パイプライン",
+    "href": "データの可視化.html#前処理パイプライン",
+    "title": "2  データの可視化",
+    "section": "2.3 前処理パイプライン",
+    "text": "2.3 前処理パイプライン\n\n\n\n\n\n\nflowchart LR\n    A[スコアブック読み取り] --&gt; B[CSVファイル作成]\n    B --&gt; C[欠損値確認]\n    C --&gt; D[変数の型確認]\n    D --&gt; E[基本統計量の算出]\n    E --&gt; F[可視化・分析]\n\n\n\n\n図 2.2: データ前処理パイプライン",
+    "crumbs": [
+      "データ",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>データの可視化</span>"
     ]
   },
   {
@@ -351,7 +373,7 @@
     "href": "04_結果と考察.html#相関分析",
     "title": "結果と考察",
     "section": "相関分析",
-    "text": "相関分析\n\n散布図による関係の確認\n\nストライク率 × ヒット数ストライク率 × エラー数\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n図 1: ストライク率とヒット数の散布図\n\n\n\n\n\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n図 2: ストライク率とエラー数の散布図\n\n\n\n\n\n\n\n\n\n\n相関係数の算出\n表 1 に各変数間の相関行列を示す。\n\n\n\n\n表 1: 相関行列（ストライク率・ヒット数・四球数）\n\n\n\n\n\n\n\nStrike_Rate\nHits_Allowed\nWalks\n\n\n\n\nStrike_Rate\n1.000\n-0.192\n-0.135\n\n\nHits_Allowed\n-0.192\n1.000\n0.233\n\n\nWalks\n-0.135\n0.233\n1.000\n\n\n\n\n\n\n\n\n\n\n無相関検定（ストライク率 × 勝敗）\n\n\n\n    Pearson's product-moment correlation\n\ndata:  df$Strike_Rate and df$Win_Flag\nt = 2.3306, df = 18, p-value = 0.03161\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n 0.04948046 0.76169622\nsample estimates:\n      cor \n0.4814591",
+    "text": "相関分析\n\n散布図による関係の確認\n\nストライク率 × ヒット数ストライク率 × エラー数\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n図 1: ストライク率とヒット数の散布図\n\n\n\n\n\nストライク率とヒット数には弱い負の相関がみられます。\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n図 2: ストライク率とエラー数の散布図\n\n\n\n\n\nストライク率とエラー数には弱い負の相関がみられます。\n\n\n\n\n\n相関係数の算出\n表 1 に各変数間の相関行列を示す。\n\n\n\n\n表 1: 相関行列（ストライク率・ヒット数・四球数）\n\n\n\n\n\n\n\nStrike_Rate\nHits_Allowed\nWalks\n\n\n\n\nStrike_Rate\n1.000\n-0.192\n-0.135\n\n\nHits_Allowed\n-0.192\n1.000\n0.233\n\n\nWalks\n-0.135\n0.233\n1.000\n\n\n\n\n\n\n\n\n\n\n無相関検定（ストライク率 × 勝敗）\n\n\n\n    Pearson's product-moment correlation\n\ndata:  df$Strike_Rate and df$Win_Flag\nt = 2.3306, df = 18, p-value = 0.03161\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n 0.04948046 0.76169622\nsample estimates:\n      cor \n0.4814591 \n\n\n相関係数が0.48\np値が0.0316",
     "crumbs": [
       "結果と考察"
     ]
@@ -381,7 +403,7 @@
     "href": "05_まとめ.html",
     "title": "まとめ",
     "section": "",
-    "text": "研究成果の要約\n本研究では、東京都内のシェアサイクル利用数を予測するモデルの構築を行い、以下の成果を得た。",
+    "text": "研究成果の要約\n本研究では、投手のストライク率が勝敗に与える影響について分析を行い、以下の成果を得た。",
     "crumbs": [
       "まとめ"
     ]
@@ -391,7 +413,7 @@
     "href": "05_まとめ.html#研究成果の要約",
     "title": "まとめ",
     "section": "",
-    "text": "データの特性把握： シェアサイクルの利用数は気温・降雨・曜日・時間帯によって大きく変動することを確認した。特に気温との正の相関と、降雨時の利用数減少が顕著であった。\n予測モデルの構築と比較： 線形回帰と回帰木（rpart）の2手法でモデルを構築し、回帰木が全ての評価指標で優れた精度を示した。回帰木のRMSEは線形回帰と比較して改善が得られた。\n影響要因の特定： 変数重要度分析により、時間帯（hour）と気温（temperature）が利用数の予測に最も寄与する変数であることを明らかにした。",
+    "text": "ストライク率と各指標の関係の把握：\n相関分析の結果、ストライク率が高いほどヒット数やエラー数が少なくなる傾向が確認された。\nストライク率と勝敗の関係の確認： 無創刊検定では、ストライク率と勝敗の間に有意な相関(相関件数0.48、p値=0.0316)が確認され、ストライク率が試合結果に与える可能性が示された。\n勝利確率の予測： ロジスティック回帰分析を用いることで、ストライク率から勝利の確立を予測できることが示され、投手のストライク率がチームの勝利にかかわる重要な指標であることが分かった。",
     "crumbs": [
       "まとめ"
     ]
@@ -401,7 +423,7 @@
     "href": "05_まとめ.html#研究の限界",
     "title": "まとめ",
     "section": "研究の限界",
-    "text": "研究の限界\n本研究には以下の限界がある。\n\n合成データの使用： 本テンプレートでは分析手法の実演を目的として合成データを使用している。実際の研究では、自治体やサービス事業者が公開する実データを用いる必要がある。\n空間的要因の未考慮： ステーションの立地（駅からの距離、オフィス街かどうか等）を変数に含めていない。\nモデルの単純さ： 回帰木の剪定パラメータのチューニングを最小限に留めており、ランダムフォレストや勾配ブースティング等のアンサンブル手法で精度向上の余地がある。",
+    "text": "研究の限界\n本研究には以下の限界がある。\n\n説明変数としてストライク率のみを用いているため、勝敗に影響するほかの要因（防御率、奪三振数）\n\n試合数が20試合と少ないため、より多くの試合データを用いるbことで分析結果の信頼性を高める必要がある。\n対戦相手や試合会場などの外部に要員を考慮していない。",
     "crumbs": [
       "まとめ"
     ]
@@ -411,7 +433,7 @@
     "href": "05_まとめ.html#今後の課題",
     "title": "まとめ",
     "section": "今後の課題",
-    "text": "今後の課題\n\n実データ（自治体オープンデータ等）を用いた分析の実施\nステーション別の利用予測モデルの構築\nランダムフォレストや勾配ブースティング等の高度な手法との比較\nリアルタイム予測システムのプロトタイプ開発\n需要予測に基づく最適な自転車再配置アルゴリズムの検討",
+    "text": "今後の課題\n\n防御率やWHIP、奪三振率など複数の投手指標を用いた分析を行う。\n\n打撃成績や守備成績も加えた多変量モデルを構築する。\n\n他チームのデータも用いて分析し、一般性を検証する。\n\nより多くの試合データを収集し、モデルの制度を向上させる。\n\n機械学習手法（ランダムフォレストやXGBoostなど）との比較を行う。",
     "crumbs": [
       "まとめ"
     ]

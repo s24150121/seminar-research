@@ -143,8 +143,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./descriptive.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">descriptive</span></span></a>
+  <a href="./データの可視化.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">データの可視化</span></span></a>
   </div>
 </li>
       </ul>
@@ -200,57 +200,38 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled" title="書き方ガイド：まとめ">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">ヒント</span>書き方ガイド：まとめ
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>何を書くか：</strong> 研究全体の成果を振り返り、限界と今後の発展可能性を述べる章です。</p>
-<p><strong>書き方のコツ：</strong></p>
-<ul>
-<li><strong>研究成果の要約</strong> は、研究目的に対応する形で箇条書きにします</li>
-<li><strong>研究の限界</strong> は弱点ではなく「改善の余地」として前向きに記述します</li>
-<li><strong>今後の課題</strong> は、次の研究テーマにつながるような具体的な方向性を示します</li>
-<li>謝辞には指導教員・データ提供者への感謝を忘れずに</li>
-</ul>
-<p><strong>Quartoの機能：</strong></p>
-<ul>
-<li>チェックリスト <code>- [ ]</code> で今後の課題を整理できます</li>
-<li><code>&gt; 引用文</code> でブロック引用（重要な結論の強調）ができます</li>
-</ul>
-</div>
-</div>
 <section id="研究成果の要約" class="level2">
 <h2 class="anchored" data-anchor-id="研究成果の要約">研究成果の要約</h2>
-<p>本研究では、東京都内のシェアサイクル利用数を予測するモデルの構築を行い、以下の成果を得た。</p>
+<p>本研究では、投手のストライク率が勝敗に与える影響について分析を行い、以下の成果を得た。</p>
 <ol type="1">
-<li><p><strong>データの特性把握：</strong> シェアサイクルの利用数は気温・降雨・曜日・時間帯によって大きく変動することを確認した。特に気温との正の相関と、降雨時の利用数減少が顕著であった。</p></li>
-<li><p><strong>予測モデルの構築と比較：</strong> 線形回帰と回帰木（rpart）の2手法でモデルを構築し、回帰木が全ての評価指標で優れた精度を示した。回帰木のRMSEは線形回帰と比較して改善が得られた。</p></li>
-<li><p><strong>影響要因の特定：</strong> 変数重要度分析により、時間帯（hour）と気温（temperature）が利用数の予測に最も寄与する変数であることを明らかにした。</p></li>
+<li><p><strong>ストライク率と各指標の関係の把握：</strong><br>
+相関分析の結果、ストライク率が高いほどヒット数やエラー数が少なくなる傾向が確認された。</p></li>
+<li><p><strong>ストライク率と勝敗の関係の確認：</strong> 無創刊検定では、ストライク率と勝敗の間に有意な相関(相関件数0.48、p値=0.0316)が確認され、ストライク率が試合結果に与える可能性が示された。</p></li>
+<li><p><strong>勝利確率の予測：</strong> ロジスティック回帰分析を用いることで、ストライク率から勝利の確立を予測できることが示され、投手のストライク率がチームの勝利にかかわる重要な指標であることが分かった。</p></li>
 </ol>
 </section>
 <section id="研究の限界" class="level2">
 <h2 class="anchored" data-anchor-id="研究の限界">研究の限界</h2>
 <p>本研究には以下の限界がある。</p>
 <ul>
-<li><strong>合成データの使用：</strong> 本テンプレートでは分析手法の実演を目的として合成データを使用している。実際の研究では、自治体やサービス事業者が公開する実データを用いる必要がある。</li>
-<li><strong>空間的要因の未考慮：</strong> ステーションの立地（駅からの距離、オフィス街かどうか等）を変数に含めていない。</li>
-<li><strong>モデルの単純さ：</strong> 回帰木の剪定パラメータのチューニングを最小限に留めており、ランダムフォレストや勾配ブースティング等のアンサンブル手法で精度向上の余地がある。</li>
+<li>説明変数としてストライク率のみを用いているため、勝敗に影響するほかの要因（防御率、奪三振数）<br>
+</li>
+<li>試合数が20試合と少ないため、より多くの試合データを用いるbことで分析結果の信頼性を高める必要がある。</li>
+<li>対戦相手や試合会場などの外部に要員を考慮していない。</li>
 </ul>
 </section>
 <section id="今後の課題" class="level2">
 <h2 class="anchored" data-anchor-id="今後の課題">今後の課題</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">実データ（自治体オープンデータ等）を用いた分析の実施</label></li>
-<li><label><input type="checkbox">ステーション別の利用予測モデルの構築</label></li>
-<li><label><input type="checkbox">ランダムフォレストや勾配ブースティング等の高度な手法との比較</label></li>
-<li><label><input type="checkbox">リアルタイム予測システムのプロトタイプ開発</label></li>
-<li><label><input type="checkbox">需要予測に基づく最適な自転車再配置アルゴリズムの検討</label></li>
+<li><label><input type="checkbox">防御率やWHIP、奪三振率など複数の投手指標を用いた分析を行う。<br>
+</label></li>
+<li><label><input type="checkbox">打撃成績や守備成績も加えた多変量モデルを構築する。<br>
+</label></li>
+<li><label><input type="checkbox">他チームのデータも用いて分析し、一般性を検証する。<br>
+</label></li>
+<li><label><input type="checkbox">より多くの試合データを収集し、モデルの制度を向上させる。<br>
+</label></li>
+<li><label><input type="checkbox">機械学習手法（ランダムフォレストやXGBoostなど）との比較を行う。</label></li>
 </ul>
 </section>
 <section id="謝辞" class="level2">
