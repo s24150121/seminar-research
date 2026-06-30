@@ -45,9 +45,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-59b6da75df3a5664e224ba7be699d449.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -188,7 +185,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#データ概要" id="toc-データ概要" class="nav-link" data-scroll-target="#データ概要">データ概要</a></li>
   <li><a href="#基本統計量" id="toc-基本統計量" class="nav-link" data-scroll-target="#基本統計量">基本統計量</a></li>
   <li><a href="#勝敗別の集計" id="toc-勝敗別の集計" class="nav-link" data-scroll-target="#勝敗別の集計">勝敗別の集計</a></li>
-  <li><a href="#可視化" id="toc-可視化" class="nav-link" data-scroll-target="#可視化">可視化</a></li>
   <li><a href="#前処理パイプライン" id="toc-前処理パイプライン" class="nav-link" data-scroll-target="#前処理パイプライン">前処理パイプライン</a></li>
   </ul>
 </nav>
@@ -351,20 +347,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="基本統計量" class="level2">
 <h2 class="anchored" data-anchor-id="基本統計量">基本統計量</h2>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
 <div id="tbl-summary-stats" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-summary-stats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -477,54 +459,6 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 </div>
 </section>
-<section id="可視化" class="level2">
-<h2 class="anchored" data-anchor-id="可視化">可視化</h2>
-<section id="勝敗別ストライク率の分布" class="level3">
-<h3 class="anchored" data-anchor-id="勝敗別ストライク率の分布">勝敗別ストライク率の分布</h3>
-<p><a href="データの可視化.html#fig-boxplot" class="quarto-xref">図&nbsp;<span>2.1</span></a> は、勝敗ごとのストライク率の分布を箱ひげ図で示したものです。 勝利試合では敗戦試合よりもストライク率が高い傾向があるか確認します。</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="02_データ_files/figure-html/fig-boxplot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="図&nbsp;1: 勝敗別ストライク率の分布（箱ひげ図）"><img src="02_データ_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="672"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;1: 勝敗別ストライク率の分布（箱ひげ図）
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="各変数の勝敗別平均" class="level3">
-<h3 class="anchored" data-anchor-id="各変数の勝敗別平均">各変数の勝敗別平均</h3>
-<p><span class="quarto-unresolved-ref">?fig-barplots</span> は、主要な投球指標を勝敗別に比較した棒グラフです。</p>
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: There was 1 warning in `summarise()`.
-ℹ In argument: `across(all_of(vars_plot), mean, na.rm = TRUE)`.
-ℹ In group 1: `Result = "L"`.
-Caused by warning:
-! The `...` argument of `across()` is deprecated as of dplyr 1.1.0.
-Supply arguments directly to `.fns` through an anonymous function instead.
-
-  # Previously
-  across(a:b, mean, na.rm = TRUE)
-
-  # Now
-  across(a:b, \(x) mean(x, na.rm = TRUE))</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><a href="02_データ_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="02_データ_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></a></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-</section>
 <section id="前処理パイプライン" class="level2">
 <h2 class="anchored" data-anchor-id="前処理パイプライン">前処理パイプライン</h2>
 <div class="cell" data-layout-align="center">
@@ -543,7 +477,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preprocess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;2: データ前処理パイプライン
+図&nbsp;1: データ前処理パイプライン
 </figcaption>
 </figure>
 </div>
@@ -967,38 +901,6 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
