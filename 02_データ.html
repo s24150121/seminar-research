@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./データの可視化.html" rel="next">
+<link href="./03_分析手法.html" rel="next">
 <link href="./研究計画書.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -45,6 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-59b6da75df3a5664e224ba7be699d449.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -142,21 +145,8 @@ ul.task-list li input[type="checkbox"] {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./02_データ.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">データ</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="セクションを切り替え">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./データの可視化.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">データの可視化</span></span></a>
-  </div>
-</li>
-      </ul>
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">データ</span></span>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
@@ -185,6 +175,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#データ概要" id="toc-データ概要" class="nav-link" data-scroll-target="#データ概要">データ概要</a></li>
   <li><a href="#基本統計量" id="toc-基本統計量" class="nav-link" data-scroll-target="#基本統計量">基本統計量</a></li>
   <li><a href="#勝敗別の集計" id="toc-勝敗別の集計" class="nav-link" data-scroll-target="#勝敗別の集計">勝敗別の集計</a></li>
+  <li><a href="#データの出典-1" id="toc-データの出典-1" class="nav-link" data-scroll-target="#データの出典-1">データの出典</a></li>
+  <li><a href="#可視化" id="toc-可視化" class="nav-link" data-scroll-target="#可視化">可視化</a></li>
   <li><a href="#前処理パイプライン" id="toc-前処理パイプライン" class="nav-link" data-scroll-target="#前処理パイプライン">前処理パイプライン</a></li>
   </ul>
 </nav>
@@ -464,6 +456,65 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+<section id="データの出典-1" class="level2">
+<h2 class="anchored" data-anchor-id="データの出典-1">データの出典</h2>
+<p>すべてソフトボールのスコア20試合分から</p>
+<div class="cell">
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["Opponent"],"name":[1],"type":["int"],"align":["right"]},{"label":["Total_Pitches"],"name":[2],"type":["int"],"align":["right"]},{"label":["Strikes"],"name":[3],"type":["int"],"align":["right"]},{"label":["Balls"],"name":[4],"type":["int"],"align":["right"]},{"label":["error"],"name":[5],"type":["int"],"align":["right"]},{"label":["Walks"],"name":[6],"type":["int"],"align":["right"]},{"label":["Strikeouts"],"name":[7],"type":["int"],"align":["right"]},{"label":["Hits_Allowed"],"name":[8],"type":["int"],"align":["right"]},{"label":["Result"],"name":[9],"type":["chr"],"align":["left"]},{"label":["Strike_Rate"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["Win_Flag"],"name":[11],"type":["int"],"align":["right"]}],"data":[{"1":"1","2":"119","3":"68","4":"51","5":"0","6":"3","7":"3","8":"4","9":"W","10":"0.57","11":"1"},{"1":"2","2":"142","3":"82","4":"60","5":"3","6":"4","7":"4","8":"13","9":"L","10":"0.58","11":"0"},{"1":"3","2":"125","3":"76","4":"49","5":"2","6":"5","7":"5","8":"3","9":"W","10":"0.61","11":"1"},{"1":"4","2":"115","3":"61","4":"54","5":"1","6":"3","7":"1","8":"7","9":"L","10":"0.53","11":"0"},{"1":"5","2":"123","3":"69","4":"54","5":"2","6":"5","7":"4","8":"5","9":"W","10":"0.56","11":"1"},{"1":"6","2":"100","3":"55","4":"45","5":"0","6":"1","7":"3","8":"6","9":"L","10":"0.55","11":"0"},{"1":"7","2":"93","3":"60","4":"33","5":"1","6":"8","7":"0","8":"5","9":"W","10":"0.65","11":"1"},{"1":"8","2":"149","3":"81","4":"68","5":"3","6":"5","7":"2","8":"7","9":"W","10":"0.54","11":"1"},{"1":"9","2":"119","3":"94","4":"25","5":"1","6":"4","7":"2","8":"8","9":"W","10":"0.79","11":"1"},{"1":"10","2":"151","3":"86","4":"65","5":"6","6":"6","7":"0","8":"13","9":"L","10":"0.57","11":"0"},{"1":"11","2":"129","3":"67","4":"62","5":"2","6":"1","7":"4","8":"11","9":"L","10":"0.52","11":"0"},{"1":"12","2":"131","3":"75","4":"56","5":"1","6":"6","7":"0","8":"8","9":"L","10":"0.57","11":"0"},{"1":"13","2":"63","3":"48","4":"15","5":"0","6":"0","7":"3","8":"3","9":"W","10":"0.76","11":"1"},{"1":"14","2":"86","3":"57","4":"29","5":"0","6":"0","7":"3","8":"3","9":"W","10":"0.66","11":"1"},{"1":"15","2":"107","3":"59","4":"48","5":"0","6":"3","7":"0","8":"6","9":"W","10":"0.55","11":"1"},{"1":"16","2":"108","3":"76","4":"32","5":"2","6":"2","7":"2","8":"9","9":"W","10":"0.70","11":"1"},{"1":"17","2":"104","3":"62","4":"42","5":"1","6":"2","7":"0","8":"0","9":"L","10":"0.60","11":"0"},{"1":"18","2":"124","3":"72","4":"52","5":"1","6":"1","7":"4","8":"6","9":"L","10":"0.58","11":"0"},{"1":"19","2":"94","3":"55","4":"39","5":"0","6":"2","7":"0","8":"4","9":"L","10":"0.59","11":"0"},{"1":"20","2":"132","3":"80","4":"52","5":"1","6":"1","7":"6","8":"8","9":"L","10":"0.61","11":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:20] 0.57 0.58 0.61 0.53 0.56 0.55 0.65 0.54 0.79 0.57 ...</code></pre>
+</div>
+</div>
+</section>
+<section id="可視化" class="level2">
+<h2 class="anchored" data-anchor-id="可視化">可視化</h2>
+<section id="勝敗別ストライク率の分布" class="level3">
+<h3 class="anchored" data-anchor-id="勝敗別ストライク率の分布">勝敗別ストライク率の分布</h3>
+<p><a href="#fig-boxplot" class="quarto-xref">図&nbsp;<span>1</span></a> は、勝敗ごとのストライク率の分布を箱ひげ図で示したものです。 勝利試合では敗戦試合よりもストライク率が高い傾向があるか確認します。</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="02_データ_files/figure-html/fig-boxplot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="図&nbsp;1: 勝敗別ストライク率の分布（箱ひげ図）"><img src="02_データ_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+図&nbsp;1: 勝敗別ストライク率の分布（箱ひげ図）
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>勝利した試合ではストライク率が高い傾向がある。<br>
+負けた試合は箱が小さいことから負け試合ではストライク率が低い状態だということがわかる。</p>
+</section>
+<section id="ストライク率と被安打の関係散布図" class="level3">
+<h3 class="anchored" data-anchor-id="ストライク率と被安打の関係散布図">ストライク率と被安打の関係（散布図）</h3>
+<p><a href="#fig-plot" class="quarto-xref">図&nbsp;<span>2</span></a> は、ストライク率と被安打数の関係を散布図にしたものです。</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-plot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="02_データ_files/figure-html/fig-plot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="図&nbsp;2: ストライク率と被安打（散布図）"><img src="02_データ_files/figure-html/fig-plot-1.png" class="img-fluid figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+図&nbsp;2: ストライク率と被安打（散布図）
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>ストライク率が1番低く被安打の数が一番多い試合は負けていることがわかる。<br>
+ストライク率が一番高い試合は被安打の数はそれなりに多いが試合には勝っていることがわかる。</p>
+</section>
+</section>
 <section id="前処理パイプライン" class="level2">
 <h2 class="anchored" data-anchor-id="前処理パイプライン">前処理パイプライン</h2>
 <div class="cell" data-layout-align="center">
@@ -482,7 +533,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preprocess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-図&nbsp;1: データ前処理パイプライン
+図&nbsp;3: データ前処理パイプライン
 </figcaption>
 </figure>
 </div>
@@ -901,12 +952,44 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./データの可視化.html" class="pagination-link" aria-label="データの可視化">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">データの可視化</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./03_分析手法.html" class="pagination-link" aria-label="分析手法">
+        <span class="nav-page-text">分析手法</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
