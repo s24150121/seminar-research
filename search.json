@@ -80,50 +80,6 @@
     ]
   },
   {
-    "objectID": "研究計画書.html",
-    "href": "研究計画書.html",
-    "title": "1  研究計画書",
-    "section": "",
-    "text": "1.1 リサーチクエスチョン\n大学ソフトボールにおけるストライク率は勝敗にどのような影響を与えるのか。",
-    "crumbs": [
-      "研究概要",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究計画書</span>"
-    ]
-  },
-  {
-    "objectID": "研究計画書.html#仮説",
-    "href": "研究計画書.html#仮説",
-    "title": "1  研究計画書",
-    "section": "1.2 仮説",
-    "text": "1.2 仮説\nストライク率が高ければ勝利し、低ければ負けてしまう。",
-    "crumbs": [
-      "研究概要",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究計画書</span>"
-    ]
-  },
-  {
-    "objectID": "研究計画書.html#分析方法",
-    "href": "研究計画書.html#分析方法",
-    "title": "1  研究計画書",
-    "section": "1.3 分析方法",
-    "text": "1.3 分析方法\n相関分析\nロジスティック回帰分析",
-    "crumbs": [
-      "研究概要",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究計画書</span>"
-    ]
-  },
-  {
-    "objectID": "研究計画書.html#スケジュール",
-    "href": "研究計画書.html#スケジュール",
-    "title": "1  研究計画書",
-    "section": "1.4 スケジュール",
-    "text": "1.4 スケジュール\n\n\n\n期間\n作業内容\n\n\n\n\n第1-2週\nテーマ選定・先行研究調査\n\n\n第3-4週\nデータ収集・前処理\n\n\n第5-8週\nモデル構築・精度評価\n\n\n第9-10週\n結果分析・考察\n\n\n第11-12週\n報告書作成・発表準備",
-    "crumbs": [
-      "研究概要",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究計画書</span>"
-    ]
-  },
-  {
     "objectID": "02_データ.html",
     "href": "02_データ.html",
     "title": "データ",
