@@ -32,325 +32,321 @@
   {
     "objectID": "01_研究概要.html",
     "href": "01_研究概要.html",
-    "title": "研究概要",
+    "title": "1  研究概要",
     "section": "",
-    "text": "研究件名\n大学ソフトボールにおけるストライク率と勝敗に関する研究",
+    "text": "1.1 研究件名\n大学ソフトボールにおけるストライク率と勝敗に関する研究",
     "crumbs": [
-      "研究概要"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
     ]
   },
   {
     "objectID": "01_研究概要.html#研究の背景",
     "href": "01_研究概要.html#研究の背景",
-    "title": "研究概要",
-    "section": "研究の背景",
-    "text": "研究の背景\n大学ソフトボールにおいて、投手は試合の勝敗を左右する重要な存在である。投手のパフォーマンスを評価する指標として、防御率1や奪三振数2などが広く用いられているが、近年ではデータ分析の普及に伴い、ストライク率3などの過程指標にも注目が集まっている。\n1 投手の失点の少なさを表す指標2 投手が三振を奪った回数を表す指標3 ストライク率とは、投球全体に占めるストライクの割合を示す指標ストライク率は投球全体に占めるストライクの割合を示す指標であり、投手の制球力や安定性を評価するうえで重要である。ストライク率が高い投手は四球を減らし、有利なカウントで打者と対戦できるため、失点の抑制や試合の勝利につながる可能性が考えられる。",
+    "title": "1  研究概要",
+    "section": "1.2 研究の背景",
+    "text": "1.2 研究の背景\n大学ソフトボールにおいて、投手は試合の勝敗を左右する重要な存在である。投手のパフォーマンスを評価する指標として、防御率1や奪三振数2などが広く用いられているが、近年ではデータ分析の普及に伴い、ストライク率3などの過程指標にも注目が集まっている。\n1 投手の失点の少なさを表す指標2 投手が三振を奪った回数を表す指標3 ストライク率とは、投球全体に占めるストライクの割合を示す指標ストライク率は投球全体に占めるストライクの割合を示す指標であり、投手の制球力や安定性を評価するうえで重要である。ストライク率が高い投手は四球を減らし、有利なカウントで打者と対戦できるため、失点の抑制や試合の勝利につながる可能性が考えられる。",
     "crumbs": [
-      "研究概要"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
     ]
   },
   {
     "objectID": "01_研究概要.html#研究の目的",
     "href": "01_研究概要.html#研究の目的",
-    "title": "研究概要",
-    "section": "研究の目的",
-    "text": "研究の目的\n大学ソフトボールにおいてストライク率と勝敗の関係を定量的に分析した研究は十分ではない。そのため、本研究では大学ソフトボールの試合データを用いて、ストライク率が勝敗にどのような影響を与えるのかを明らかにすることを目的とする。\n本研究の目的は以下の通りである。\n1.大学ソフトボールの試合データを用いて、投手のストライク率および試合結果の特徴を整理する。\n2.相関分析を用いて、ストライク率と勝敗との関係を検証する。\n3.回帰分析やロジスティック回帰分析を用いて、ストライク率が勝利確率に与える影響を定量的に評価する。",
+    "title": "1  研究概要",
+    "section": "1.3 研究の目的",
+    "text": "1.3 研究の目的\n大学ソフトボールにおいてストライク率と勝敗の関係を定量的に分析した研究は十分ではない。そのため、本研究では大学ソフトボールの試合データを用いて、ストライク率が勝敗にどのような影響を与えるのかを明らかにすることを目的とする。\n本研究の目的は以下の通りである。\n1.大学ソフトボールの試合データを用いて、投手のストライク率および試合結果の特徴を整理する。\n2.相関分析を用いて、ストライク率と勝敗との関係を検証する。\n3.回帰分析やロジスティック回帰分析を用いて、ストライク率が勝利確率に与える影響を定量的に評価する。",
     "crumbs": [
-      "研究概要"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
     ]
   },
   {
     "objectID": "01_研究概要.html#研究計画",
     "href": "01_研究概要.html#研究計画",
-    "title": "研究概要",
-    "section": "研究計画",
-    "text": "研究計画\n\n\n\n表 1: 研究スケジュール\n\n\n\n\n\n期間\n作業内容\n状態\n\n\n\n\n第1-2週\nテーマ選定・先行研究調査\n完了\n\n\n第3-4週\nデータ収集・前処理\n完了\n\n\n第5-8週\nモデル構築・精度評価\n進行中\n\n\n第9-10週\n結果分析・考察\n進行中\n\n\n第11-12週\n報告書作成・発表準備\n進行中\n\n\n\n\n\n\n\n進捗チェックリスト\n\n先行研究の調査\nデータの取得と前処理\n探索的データ分析（EDA）\n予測モデルの構築\n精度評価と比較\n変数重要度の分析\n報告書の最終版作成\n発表資料の作成",
+    "title": "1  研究概要",
+    "section": "1.4 研究計画",
+    "text": "1.4 研究計画\n\n\n\n表 1.1: 研究スケジュール\n\n\n\n\n\n期間\n作業内容\n状態\n\n\n\n\n第1-2週\nテーマ選定・先行研究調査\n完了\n\n\n第3-4週\nデータ収集・前処理\n完了\n\n\n第5-8週\nモデル構築・精度評価\n進行中\n\n\n第9-10週\n結果分析・考察\n進行中\n\n\n第11-12週\n報告書作成・発表準備\n進行中\n\n\n\n\n\n\n\n進捗チェックリスト\n\n先行研究の調査\nデータの取得と前処理\n探索的データ分析（EDA）\n予測モデルの構築\n精度評価と比較\n変数重要度の分析\n報告書の最終版作成\n発表資料の作成",
     "crumbs": [
-      "研究概要"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
     ]
   },
   {
     "objectID": "01_研究概要.html#研究体制",
     "href": "01_研究概要.html#研究体制",
-    "title": "研究概要",
-    "section": "研究体制",
-    "text": "研究体制\n\n\n\n表 2: 研究体制\n\n\n\n\n\n項目\n内容\n\n\n\n\n所属\n東京国際大学 商学部 データサイエンスコース\n\n\n研究室\n竹田ゼミ（データアナリティクスゼミ）\n\n\n指導教員\n竹田 恒\n\n\n研究者\n吉田鈴（24150121）\n\n\n研究期間\n2026年度 春学期\n\n\n使用言語\nR（4.1以上）\n\n\n主要パッケージ\nなし（基本パッケージのみ）",
+    "title": "1  研究概要",
+    "section": "1.5 研究体制",
+    "text": "1.5 研究体制\n\n\n\n表 1.2: 研究体制\n\n\n\n\n\n項目\n内容\n\n\n\n\n所属\n東京国際大学 商学部 データサイエンスコース\n\n\n研究室\n竹田ゼミ（データアナリティクスゼミ）\n\n\n指導教員\n竹田 恒\n\n\n研究者\n吉田鈴（24150121）\n\n\n研究期間\n2026年度 春学期\n\n\n使用言語\nR（4.1以上）\n\n\n主要パッケージ\nなし（基本パッケージのみ）",
     "crumbs": [
-      "研究概要"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究概要</span>"
     ]
   },
   {
     "objectID": "研究計画書.html",
     "href": "研究計画書.html",
-    "title": "1  研究計画書",
+    "title": "2  研究計画書",
     "section": "",
-    "text": "1.1 リサーチクエスチョン\n大学ソフトボールにおけるストライク率は勝敗にどのような影響を与えるのか。",
+    "text": "2.1 リサーチクエスチョン\n大学ソフトボールにおけるストライク率は勝敗にどのような影響を与えるのか。",
     "crumbs": [
-      "研究概要",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究計画書</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
     ]
   },
   {
     "objectID": "研究計画書.html#仮説",
     "href": "研究計画書.html#仮説",
-    "title": "1  研究計画書",
-    "section": "1.2 仮説",
-    "text": "1.2 仮説\nストライク率が高ければ勝利し、低ければ負けてしまう。",
+    "title": "2  研究計画書",
+    "section": "2.2 仮説",
+    "text": "2.2 仮説\nストライク率が高ければ勝利し、低ければ負けてしまう。",
     "crumbs": [
-      "研究概要",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究計画書</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
     ]
   },
   {
     "objectID": "研究計画書.html#分析方法",
     "href": "研究計画書.html#分析方法",
-    "title": "1  研究計画書",
-    "section": "1.3 分析方法",
-    "text": "1.3 分析方法\n相関分析\nロジスティック回帰分析",
+    "title": "2  研究計画書",
+    "section": "2.3 分析方法",
+    "text": "2.3 分析方法\n相関分析\nロジスティック回帰分析",
     "crumbs": [
-      "研究概要",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究計画書</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
     ]
   },
   {
     "objectID": "研究計画書.html#スケジュール",
     "href": "研究計画書.html#スケジュール",
-    "title": "1  研究計画書",
-    "section": "1.4 スケジュール",
-    "text": "1.4 スケジュール\n\n\n\n期間\n作業内容\n\n\n\n\n第1-2週\nテーマ選定・先行研究調査\n\n\n第3-4週\nデータ収集・前処理\n\n\n第5-8週\nモデル構築・精度評価\n\n\n第9-10週\n結果分析・考察\n\n\n第11-12週\n報告書作成・発表準備",
+    "title": "2  研究計画書",
+    "section": "2.4 スケジュール",
+    "text": "2.4 スケジュール\n\n\n\n期間\n作業内容\n\n\n\n\n第1-2週\nテーマ選定・先行研究調査\n\n\n第3-4週\nデータ収集・前処理\n\n\n第5-8週\nモデル構築・精度評価\n\n\n第9-10週\n結果分析・考察\n\n\n第11-12週\n報告書作成・発表準備",
     "crumbs": [
-      "研究概要",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>研究計画書</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>研究計画書</span>"
     ]
   },
   {
     "objectID": "02_データ.html",
     "href": "02_データ.html",
-    "title": "データ",
+    "title": "3  データ",
     "section": "",
-    "text": "データの出典\n本分析では、ソフトボールの試合スコアから手動で読み取ったデータを使用しています。 対象は20試合分であり、各試合における投手の投球内容と試合結果を記録しています。",
+    "text": "3.1 データの出典\n本分析では、ソフトボールの試合スコアから手動で読み取ったデータを使用しています。 対象は20試合分であり、各試合における投手の投球内容と試合結果を記録しています。",
     "crumbs": [
-      "データ"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>データ</span>"
     ]
   },
   {
     "objectID": "02_データ.html#データの準備",
     "href": "02_データ.html#データの準備",
-    "title": "データ",
-    "section": "データの準備",
-    "text": "データの準備",
+    "title": "3  データ",
+    "section": "3.2 データの準備",
+    "text": "3.2 データの準備",
     "crumbs": [
-      "データ"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>データ</span>"
     ]
   },
   {
     "objectID": "02_データ.html#データ概要",
     "href": "02_データ.html#データ概要",
-    "title": "データ",
-    "section": "データ概要",
-    "text": "データ概要\n目的変数は試合の勝敗（Win_Flag）であり、投球内容を示す各種指標を説明変数として使用します。\n\n\n\n表 1: データセットの概要\n\n\n\n\n\n項目\n内容\n\n\n\n\nデータ出典\n試合スコアの手動読み取り\n\n\nレコード数\n20試合\n\n\n目的変数\n勝敗フラグ（Win_Flag：勝ち = 1、負け = 0）\n\n\n主な説明変数\n総投球数、ストライク数、ボール数、ストライク率など\n\n\n\n\n\n\n\n変数一覧\n\n\n\n表 2: 変数一覧\n\n\n\n\n\n\n\n\n\n\n変数名\n型\n説明\n\n\n\n\nOpponent\ninteger\n試合数（1〜20）\n\n\nTotal_Pitches\ninteger\n総投球数\n\n\nStrikes\ninteger\nストライク数\n\n\nBalls\ninteger\nボール数\n\n\nerror\ninteger\nエラー数\n\n\nWalks\ninteger\n四死球数1\n\n\nStrikeouts\ninteger\n三振数2\n\n\nHits_Allowed\ninteger\n被安打数3\n\n\nResult\ncharacter\n試合結果（W：勝ち、L：負け）\n\n\nStrike_Rate\nnumeric\nストライク率4（Strikes ÷ Total_Pitches）\n\n\nWin_Flag\ninteger\n勝敗フラグ（勝ち = 1、負け = 0）\n\n\n\n1 四死球とは、四球（フォアボール）と死球（デッドボール）の合計を表す指標であり、投手が打者に与えた無料出塁の回数を示す。四死球が少ないほど投手の制球力が高いと考えられる。2 三振とは、投手が打者を3ストライクでアウトにした回数を表す指標である。3 投手が相手打者に許したヒット数を表す指標である。4 ストライク率とは、投球全体に占めるストライクの割合を示す指標であり、投手の制球力や安定性を評価するために用いられる。",
+    "title": "3  データ",
+    "section": "3.3 データ概要",
+    "text": "3.3 データ概要\n目的変数は試合の勝敗（Win_Flag）であり、投球内容を示す各種指標を説明変数として使用します。\n\n\n\n表 3.1: データセットの概要\n\n\n\n\n\n項目\n内容\n\n\n\n\nデータ出典\n試合スコアの手動読み取り\n\n\nレコード数\n20試合\n\n\n目的変数\n勝敗フラグ（Win_Flag：勝ち = 1、負け = 0）\n\n\n主な説明変数\n総投球数、ストライク数、ボール数、ストライク率など\n\n\n\n\n\n\n\n変数一覧\n\n\n\n表 3.2: 変数一覧\n\n\n\n\n\n\n\n\n\n\n変数名\n型\n説明\n\n\n\n\nOpponent\ninteger\n試合数（1〜20）\n\n\nTotal_Pitches\ninteger\n総投球数\n\n\nStrikes\ninteger\nストライク数\n\n\nBalls\ninteger\nボール数\n\n\nerror\ninteger\nエラー数\n\n\nWalks\ninteger\n四死球数1\n\n\nStrikeouts\ninteger\n三振数2\n\n\nHits_Allowed\ninteger\n被安打数3\n\n\nResult\ncharacter\n試合結果（W：勝ち、L：負け）\n\n\nStrike_Rate\nnumeric\nストライク率4（Strikes ÷ Total_Pitches）\n\n\nWin_Flag\ninteger\n勝敗フラグ（勝ち = 1、負け = 0）\n\n\n\n1 四死球とは、四球（フォアボール）と死球（デッドボール）の合計を表す指標であり、投手が打者に与えた無料出塁の回数を示す。四死球が少ないほど投手の制球力が高いと考えられる。2 三振とは、投手が打者を3ストライクでアウトにした回数を表す指標である。3 投手が相手打者に許したヒット数を表す指標である。4 ストライク率とは、投球全体に占めるストライクの割合を示す指標であり、投手の制球力や安定性を評価するために用いられる。",
     "crumbs": [
-      "データ"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>データ</span>"
     ]
   },
   {
     "objectID": "02_データ.html#基本統計量",
     "href": "02_データ.html#基本統計量",
-    "title": "データ",
-    "section": "基本統計量",
-    "text": "基本統計量\n\n\n\n\n表 3: 数値変数の基本統計量\n\n\n\n\n\n\n変数\n平均\n標準偏差\n最小値\n中央値\n最大値\n\n\n\n\nTotal_Pitches\n115.70\n21.91\n63.00\n119.00\n151.00\n\n\nStrikes\n69.15\n12.07\n48.00\n68.50\n94.00\n\n\nBalls\n46.55\n14.05\n15.00\n50.00\n68.00\n\n\nerror\n1.35\n1.46\n0.00\n1.00\n6.00\n\n\nWalks\n3.10\n2.22\n0.00\n3.00\n8.00\n\n\nStrikeouts\n2.30\n1.89\n0.00\n2.50\n6.00\n\n\nHits_Allowed\n6.45\n3.36\n0.00\n6.00\n13.00\n\n\nStrike_Rate\n0.60\n0.07\n0.52\n0.58\n0.79",
+    "title": "3  データ",
+    "section": "3.4 基本統計量",
+    "text": "3.4 基本統計量\n\n\n\n\n表 3.3: 数値変数の基本統計量\n\n\n\n\n\n\n変数\n平均\n標準偏差\n最小値\n中央値\n最大値\n\n\n\n\nTotal_Pitches\n115.70\n21.91\n63.00\n119.00\n151.00\n\n\nStrikes\n69.15\n12.07\n48.00\n68.50\n94.00\n\n\nBalls\n46.55\n14.05\n15.00\n50.00\n68.00\n\n\nerror\n1.35\n1.46\n0.00\n1.00\n6.00\n\n\nWalks\n3.10\n2.22\n0.00\n3.00\n8.00\n\n\nStrikeouts\n2.30\n1.89\n0.00\n2.50\n6.00\n\n\nHits_Allowed\n6.45\n3.36\n0.00\n6.00\n13.00\n\n\nStrike_Rate\n0.60\n0.07\n0.52\n0.58\n0.79",
     "crumbs": [
-      "データ"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>データ</span>"
     ]
   },
   {
     "objectID": "02_データ.html#勝敗別の集計",
     "href": "02_データ.html#勝敗別の集計",
-    "title": "データ",
-    "section": "勝敗別の集計",
-    "text": "勝敗別の集計\n\n\n\n\n表 4: 勝敗別のストライク率（平均・標準偏差）",
+    "title": "3  データ",
+    "section": "3.5 勝敗別の集計",
+    "text": "3.5 勝敗別の集計\n\n\n\n\n表 3.4: 勝敗別のストライク率（平均・標準偏差）",
     "crumbs": [
-      "データ"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>データ</span>"
     ]
   },
   {
     "objectID": "02_データ.html#データの出典-1",
     "href": "02_データ.html#データの出典-1",
-    "title": "データ",
-    "section": "データの出典",
-    "text": "データの出典\nすべてソフトボールのスコア20試合分から\n\n\n\n  \n\n\n\n num [1:20] 0.57 0.58 0.61 0.53 0.56 0.55 0.65 0.54 0.79 0.57 ...",
+    "title": "3  データ",
+    "section": "3.6 データの出典",
+    "text": "3.6 データの出典\nすべてソフトボールのスコア20試合分から\n\n\n\n  \n\n\n\n num [1:20] 0.57 0.58 0.61 0.53 0.56 0.55 0.65 0.54 0.79 0.57 ...",
     "crumbs": [
-      "データ"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>データ</span>"
     ]
   },
   {
     "objectID": "02_データ.html#可視化",
     "href": "02_データ.html#可視化",
-    "title": "データ",
-    "section": "可視化",
-    "text": "可視化\n\n勝敗別ストライク率の分布\n図 1 は、勝敗ごとのストライク率の分布を箱ひげ図で示したものです。 勝利試合では敗戦試合よりもストライク率が高い傾向があるか確認します。\n\n\n\n\n\n\n\n\n図 1: 勝敗別ストライク率の分布（箱ひげ図）\n\n\n\n\n\n勝利した試合ではストライク率が高い傾向がある。\n負けた試合は箱が小さいことから負け試合ではストライク率が低い状態だということがわかる。\n\n\nストライク率と被安打の関係（散布図）\n図 2 は、ストライク率と被安打数の関係を散布図にしたものです。\n\n\n\n\n\n\n\n\n図 2: ストライク率と被安打（散布図）\n\n\n\n\n\nストライク率が1番低く被安打の数が一番多い試合は負けていることがわかる。\nストライク率が1番高い試合は被安打の数はそれなりに多いが試合には勝っていることがわかる。",
+    "title": "3  データ",
+    "section": "3.7 可視化",
+    "text": "3.7 可視化\n\n勝敗別ストライク率の分布\n図 3.1 は、勝敗ごとのストライク率の分布を箱ひげ図で示したものです。 勝利試合では敗戦試合よりもストライク率が高い傾向があるか確認します。\n\n\n\n\n\n\n\n\n図 3.1: 勝敗別ストライク率の分布（箱ひげ図）\n\n\n\n\n\n勝利した試合ではストライク率が高い傾向がある。\n負けた試合は箱が小さいことから負け試合ではストライク率が低い状態だということがわかる。\n\n\nストライク率と被安打の関係（散布図）\n図 3.2 は、ストライク率と被安打数の関係を散布図にしたものです。\n\n\n\n\n\n\n\n\n図 3.2: ストライク率と被安打（散布図）\n\n\n\n\n\nストライク率が1番低く被安打の数が一番多い試合は負けていることがわかる。\nストライク率が1番高い試合は被安打の数はそれなりに多いが試合には勝っていることがわかる。",
     "crumbs": [
-      "データ"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>データ</span>"
     ]
   },
   {
     "objectID": "02_データ.html#前処理パイプライン",
     "href": "02_データ.html#前処理パイプライン",
-    "title": "データ",
-    "section": "前処理パイプライン",
-    "text": "前処理パイプライン\n\n\n\n\n\n\nflowchart LR\n    A[スコアブック読み取り] --&gt; B[CSVファイル作成]\n    B --&gt; C[欠損値確認]\n    C --&gt; D[変数の型確認]\n    D --&gt; E[基本統計量の算出]\n    E --&gt; F[可視化・分析]\n\n\n\n\n図 3: データ前処理パイプライン",
+    "title": "3  データ",
+    "section": "3.8 前処理パイプライン",
+    "text": "3.8 前処理パイプライン\n\n\n\n\n\n\nflowchart LR\n    A[スコアブック読み取り] --&gt; B[CSVファイル作成]\n    B --&gt; C[欠損値確認]\n    C --&gt; D[変数の型確認]\n    D --&gt; E[基本統計量の算出]\n    E --&gt; F[可視化・分析]\n\n\n\n\n図 3.3: データ前処理パイプライン",
     "crumbs": [
-      "データ"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>データ</span>"
     ]
   },
   {
     "objectID": "03_分析手法.html",
     "href": "03_分析手法.html",
-    "title": "分析手法",
+    "title": "4  分析手法",
     "section": "",
-    "text": "手法の選定\n本研究では、以下の2手法を用いる。まず相関分析で変数間の関係を確認し、次にロジスティック回帰で勝敗の2値予測を行う。",
+    "text": "4.1 手法の選定\n本研究では、以下の2手法を用いる。まず相関分析で変数間の関係を確認し、次にロジスティック回帰で勝敗の2値予測を行う。",
     "crumbs": [
-      "分析手法"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>分析手法</span>"
     ]
   },
   {
     "objectID": "03_分析手法.html#手法の選定",
     "href": "03_分析手法.html#手法の選定",
-    "title": "分析手法",
+    "title": "4  分析手法",
     "section": "",
-    "text": "表 1: 手法の比較\n\n\n\n\n\n\n\n\n\n\n\n手法\n特徴\n利点\n欠点\n\n\n\n\n相関分析\n2変数間の線形関係を定量化\n解釈が容易、計算が高速\n非線形関係を捉えられない\n\n\nロジスティック回帰\n2値目的変数の確率を予測\n確率として解釈可能\n線形な決定境界を仮定",
+    "text": "表 4.1: 手法の比較\n\n\n\n\n\n\n\n\n\n\n\n手法\n特徴\n利点\n欠点\n\n\n\n\n相関分析\n2変数間の線形関係を定量化\n解釈が容易、計算が高速\n非線形関係を捉えられない\n\n\nロジスティック回帰\n2値目的変数の確率を予測\n確率として解釈可能\n線形な決定境界を仮定",
     "crumbs": [
-      "分析手法"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>分析手法</span>"
     ]
   },
   {
     "objectID": "03_分析手法.html#相関分析",
     "href": "03_分析手法.html#相関分析",
-    "title": "分析手法",
-    "section": "相関分析",
-    "text": "相関分析\n\n相関係数\n2変数 \\(x\\)（ストライク率）と \\(y\\)（被安打数など）の線形関係の強さを以下の式で定量化する。\n\\[\nr = \\frac{\\sum_{i=1}^{n}(x_i - \\bar{x})(y_i - \\bar{y})}{\\sqrt{\\sum_{i=1}^{n}(x_i - \\bar{x})^2 \\sum_{i=1}^{n}(y_i - \\bar{y})^2}}\n\\tag{1}\\]\n\\(r\\) は \\(-1 \\leq r \\leq 1\\) の値をとり、\\(|r|\\) が1に近いほど強い線形関係を示す。\n\n\n無相関検定\n母相関係数が0であるという帰無仮説 \\(H_0: \\rho = 0\\) を検定する。検定統計量は以下のとおりである。\n\\[\nt = \\frac{r\\sqrt{n-2}}{\\sqrt{1-r^2}} \\sim t(n-2)\n\\tag{2}\\]\ncor.test() により、相関係数 \\(r\\)、\\(p\\) 値、95%信頼区間が出力される。",
+    "title": "4  分析手法",
+    "section": "4.2 相関分析",
+    "text": "4.2 相関分析\n\n相関係数\n2変数 \\(x\\)（ストライク率）と \\(y\\)（被安打数など）の線形関係の強さを以下の式で定量化する。\n\\[\nr = \\frac{\\sum_{i=1}^{n}(x_i - \\bar{x})(y_i - \\bar{y})}{\\sqrt{\\sum_{i=1}^{n}(x_i - \\bar{x})^2 \\sum_{i=1}^{n}(y_i - \\bar{y})^2}}\n\\tag{4.1}\\]\n\\(r\\) は \\(-1 \\leq r \\leq 1\\) の値をとり、\\(|r|\\) が1に近いほど強い線形関係を示す。\n\n\n無相関検定\n母相関係数が0であるという帰無仮説 \\(H_0: \\rho = 0\\) を検定する。検定統計量は以下のとおりである。\n\\[\nt = \\frac{r\\sqrt{n-2}}{\\sqrt{1-r^2}} \\sim t(n-2)\n\\tag{4.2}\\]\ncor.test() により、相関係数 \\(r\\)、\\(p\\) 値、95%信頼区間が出力される。",
     "crumbs": [
-      "分析手法"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>分析手法</span>"
     ]
   },
   {
     "objectID": "03_分析手法.html#ロジスティック回帰分析",
     "href": "03_分析手法.html#ロジスティック回帰分析",
-    "title": "分析手法",
-    "section": "ロジスティック回帰分析",
-    "text": "ロジスティック回帰分析\n\nモデルの定義\n目的変数を勝敗フラグ \\(Y \\in \\{0, 1\\}\\)、説明変数をストライク率 \\(x\\) とする。勝利確率 \\(p = P(Y=1 \\mid x)\\) を以下のロジスティック関数でモデル化する。\n\\[\n\\log\\frac{p}{1-p} = b_0 + b_1 x\n\\tag{3}\\]\n\\[\n\\hat{p} = \\frac{1}{1 + \\exp\\{-(b_0 + b_1 x)\\}}\n\\tag{4}\\]\nここで \\(b_0\\) は切片、\\(b_1\\) はストライク率の回帰係数である。式 4 は S 字型の曲線を描き、\\(\\hat{p}\\) は常に \\(0 \\leq \\hat{p} \\leq 1\\) の範囲に収まる。\n\n\n推定方法\nパラメータ \\(b_0, b_1\\) は最尤法により推定する。対数尤度関数は以下のとおりである。\n\\[\n\\ell(b_0, b_1) = \\sum_{i=1}^{n} \\left[ y_i \\log \\hat{p}_i + (1 - y_i) \\log(1 - \\hat{p}_i) \\right]\n\\tag{5}\\]\nRでは glm(..., family = 'binomial') により推定を行う。",
+    "title": "4  分析手法",
+    "section": "4.3 ロジスティック回帰分析",
+    "text": "4.3 ロジスティック回帰分析\n\nモデルの定義\n目的変数を勝敗フラグ \\(Y \\in \\{0, 1\\}\\)、説明変数をストライク率 \\(x\\) とする。勝利確率 \\(p = P(Y=1 \\mid x)\\) を以下のロジスティック関数でモデル化する。\n\\[\n\\log\\frac{p}{1-p} = b_0 + b_1 x\n\\tag{4.3}\\]\n\\[\n\\hat{p} = \\frac{1}{1 + \\exp\\{-(b_0 + b_1 x)\\}}\n\\tag{4.4}\\]\nここで \\(b_0\\) は切片、\\(b_1\\) はストライク率の回帰係数である。式 4.4 は S 字型の曲線を描き、\\(\\hat{p}\\) は常に \\(0 \\leq \\hat{p} \\leq 1\\) の範囲に収まる。\n\n\n推定方法\nパラメータ \\(b_0, b_1\\) は最尤法により推定する。対数尤度関数は以下のとおりである。\n\\[\n\\ell(b_0, b_1) = \\sum_{i=1}^{n} \\left[ y_i \\log \\hat{p}_i + (1 - y_i) \\log(1 - \\hat{p}_i) \\right]\n\\tag{4.5}\\]\nRでは glm(..., family = 'binomial') により推定を行う。",
     "crumbs": [
-      "分析手法"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>分析手法</span>"
     ]
   },
   {
     "objectID": "03_分析手法.html#分析パイプライン",
     "href": "03_分析手法.html#分析パイプライン",
-    "title": "分析手法",
-    "section": "分析パイプライン",
-    "text": "分析パイプライン\n\n\n\n\n\n\nflowchart LR\n    A[データ読込&lt;br&gt;r.csv] --&gt; B[散布図による&lt;br&gt;可視化]\n    B --&gt; C[相関係数の算出&lt;br&gt;cor]\n    C --&gt; D[無相関検定&lt;br&gt;cor.test]\n    D --&gt; E[ロジスティック回帰&lt;br&gt;glm]\n    E --&gt; F[勝利確率の予測&lt;br&gt;predict]\n\n\n\n\n図 1: 分析パイプライン",
+    "title": "4  分析手法",
+    "section": "4.4 分析パイプライン",
+    "text": "4.4 分析パイプライン\n\n\n\n\n\n\nflowchart LR\n    A[データ読込&lt;br&gt;r.csv] --&gt; B[散布図による&lt;br&gt;可視化]\n    B --&gt; C[相関係数の算出&lt;br&gt;cor]\n    C --&gt; D[無相関検定&lt;br&gt;cor.test]\n    D --&gt; E[ロジスティック回帰&lt;br&gt;glm]\n    E --&gt; F[勝利確率の予測&lt;br&gt;predict]\n\n\n\n\n図 4.1: 分析パイプライン",
     "crumbs": [
-      "分析手法"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>分析手法</span>"
     ]
   },
   {
     "objectID": "03_分析手法.html#使用変数一覧",
     "href": "03_分析手法.html#使用変数一覧",
-    "title": "分析手法",
-    "section": "使用変数一覧",
-    "text": "使用変数一覧\n\n\n\n表 2: 使用変数一覧\n\n\n\n\n\n\n\n\n\n\n\n変数名\n型\n説明\n役割\n\n\n\n\nStrike_Rate\ninteger\nストライク率\n説明変数\n\n\nHits_Allowed\ninteger\n被安打数\n目的変数（相関分析）\n\n\nWalks\ninteger\n四球数\n目的変数（相関行列）\n\n\nerror\ninteger\nエラー数\n目的変数（相関分析）\n\n\nWin_Flag\ninteger\n勝敗フラグ（1=勝, 0=負）\n目的変数（ロジスティック回帰）\n\n\n\n\n\n\nここで \\(\\beta_0\\) は切片、\\(\\beta_1, \\ldots, \\beta_p\\) は回帰係数、\\(\\varepsilon\\) は誤差項である (James ほか 2023年)。\n\n\n\nJames, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, と Jonathan Taylor. 2023年. An Introduction to Statistical Learning: with Applications in R. 2nd 版. Springer. https://doi.org/10.1007/978-3-031-38747-0.",
+    "title": "4  分析手法",
+    "section": "4.5 使用変数一覧",
+    "text": "4.5 使用変数一覧\n\n\n\n表 4.2: 使用変数一覧\n\n\n\n\n\n\n\n\n\n\n\n変数名\n型\n説明\n役割\n\n\n\n\nStrike_Rate\ninteger\nストライク率\n説明変数\n\n\nHits_Allowed\ninteger\n被安打数\n目的変数（相関分析）\n\n\nWalks\ninteger\n四球数\n目的変数（相関行列）\n\n\nerror\ninteger\nエラー数\n目的変数（相関分析）\n\n\nWin_Flag\ninteger\n勝敗フラグ（1=勝, 0=負）\n目的変数（ロジスティック回帰）\n\n\n\n\n\n\nここで \\(\\beta_0\\) は切片、\\(\\beta_1, \\ldots, \\beta_p\\) は回帰係数、\\(\\varepsilon\\) は誤差項である (James ほか 2023年)。\n\n\n\nJames, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, と Jonathan Taylor. 2023年. An Introduction to Statistical Learning: with Applications in R. 2nd 版. Springer. https://doi.org/10.1007/978-3-031-38747-0.",
     "crumbs": [
-      "分析手法"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>分析手法</span>"
     ]
   },
   {
     "objectID": "04_結果と考察.html",
     "href": "04_結果と考察.html",
-    "title": "結果と考察",
+    "title": "5  結果と考察",
     "section": "",
-    "text": "データ読み込みと前処理",
+    "text": "5.1 データ読み込みと前処理",
     "crumbs": [
-      "結果と考察"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>結果と考察</span>"
     ]
   },
   {
     "objectID": "04_結果と考察.html#相関分析",
     "href": "04_結果と考察.html#相関分析",
-    "title": "結果と考察",
-    "section": "相関分析",
-    "text": "相関分析\n\n散布図による関係の確認\n\nストライク率 × ヒット数ストライク率 × エラー数\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n図 1: ストライク率とヒット数の散布図\n\n\n\n\n\nストライク率とヒット数には弱い負の相関がみられます。\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n図 2: ストライク率とエラー数の散布図\n\n\n\n\n\nストライク率とエラー数には弱い負の相関がみられます。\n\n\n\n\n\n相関係数の算出\n表 1 に各変数間の相関行列を示す。\n\n\n\n\n表 1: 相関行列（ストライク率・ヒット数・四球数）\n\n\n\n\n\n\n\nStrike_Rate\nHits_Allowed\nWalks\n\n\n\n\nStrike_Rate\n1.000\n-0.192\n-0.135\n\n\nHits_Allowed\n-0.192\n1.000\n0.233\n\n\nWalks\n-0.135\n0.233\n1.000\n\n\n\n\n\n\n\n\nストライク率と被安打の相関係数は -0.192 であり、弱い負の相関がみられた。ストライク率が高い投手ほど、被安打が少ない傾向がわずかに確認された。\nストライク率と四死球の相関係数は -0.135 であり、ごく弱い負の相関がみられた。ストライク率が高い投手ほど四死球が少ない傾向はあるものの、その関係は強くないことが示された。\n被安打と四死球の相関係数は 0.233 であり、弱い正の相関がみられた。被安打が多い投手ほど四死球も多くなる傾向がわずかに確認された。\n\n\n無相関検定（ストライク率 × 勝敗）\n\n\n\n    Pearson's product-moment correlation\n\ndata:  df$Strike_Rate and df$Win_Flag\nt = 2.3306, df = 18, p-value = 0.03161\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n 0.04948046 0.76169622\nsample estimates:\n      cor \n0.4814591 \n\n\n無相関検定の結果、ストライク率と勝敗の間には中程度の正の相関(r=0.481)が認められ、5%水準で統計的に優位であった(p=0.0316)。 ストライク率が高いほど勝利する傾向が示された。",
+    "title": "5  結果と考察",
+    "section": "5.2 相関分析",
+    "text": "5.2 相関分析\n\n散布図による関係の確認\n\nストライク率 × ヒット数ストライク率 × エラー数\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n図 5.1: ストライク率とヒット数の散布図\n\n\n\n\n\nストライク率とヒット数には弱い負の相関がみられます。\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n図 5.2: ストライク率とエラー数の散布図\n\n\n\n\n\nストライク率とエラー数には弱い負の相関がみられます。\n\n\n\n\n\n相関係数の算出\n表 5.1 に各変数間の相関行列を示す。\n\n\n\n\n表 5.1: 相関行列（ストライク率・ヒット数・四球数）\n\n\n\n\n\n\n\nStrike_Rate\nHits_Allowed\nWalks\n\n\n\n\nStrike_Rate\n1.000\n-0.192\n-0.135\n\n\nHits_Allowed\n-0.192\n1.000\n0.233\n\n\nWalks\n-0.135\n0.233\n1.000\n\n\n\n\n\n\n\n\nストライク率と被安打の相関係数は -0.192 であり、弱い負の相関がみられた。ストライク率が高い投手ほど、被安打が少ない傾向がわずかに確認された。\nストライク率と四死球の相関係数は -0.135 であり、ごく弱い負の相関がみられた。ストライク率が高い投手ほど四死球が少ない傾向はあるものの、その関係は強くないことが示された。\n被安打と四死球の相関係数は 0.233 であり、弱い正の相関がみられた。被安打が多い投手ほど四死球も多くなる傾向がわずかに確認された。\n\n\n無相関検定（ストライク率 × 勝敗）\n\n\n\n    Pearson's product-moment correlation\n\ndata:  df$Strike_Rate and df$Win_Flag\nt = 2.3306, df = 18, p-value = 0.03161\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n 0.04948046 0.76169622\nsample estimates:\n      cor \n0.4814591 \n\n\n無相関検定の結果、ストライク率と勝敗の間には中程度の正の相関(r=0.481)が認められ、5%水準で統計的に優位であった(p=0.0316)。 ストライク率が高いほど勝利する傾向が示された。",
     "crumbs": [
-      "結果と考察"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>結果と考察</span>"
     ]
   },
   {
     "objectID": "04_結果と考察.html#ロジスティック回帰分析",
     "href": "04_結果と考察.html#ロジスティック回帰分析",
-    "title": "結果と考察",
-    "section": "ロジスティック回帰分析",
-    "text": "ロジスティック回帰分析\nストライク率（Strike_Rate）を説明変数、勝敗（Win_Flag：勝利=1、敗北=0）を目的変数としてロジスティック回帰モデルを構築した。\n\n\n\n\n表 2: ロジスティック回帰モデルの係数\n\n\n\n\n\n\n\n推定値\n標準誤差\nz値\np値\n\n\n\n\n(Intercept)\n-12.3795\n6.9230\n-1.7882\n0.0738\n\n\nStrike_Rate\n20.7915\n11.7914\n1.7633\n0.0779\n\n\n\n\n\n\n\n\nロジスティック回帰分析の結果、ストライク率の回帰係数は20.79で正の値となり、ストライク率が高いほど勝利する確率が高くなる傾向が確認された。一方、p値は0.0779であり、5%水準では統計的に有意とはいえなかったものの、10%水準では有意な傾向がみられた。このことから、ストライク率は勝敗に影響を与える可能性が示唆された。\n\n回帰曲線の可視化\n図 3 にストライク率と勝利確率の関係を示す。\n\n\n\n\n\n\n\n\n図 3: ロジスティック回帰曲線（ストライク率 vs 勝敗）\n\n\n\n\n\n\n勝利確率の予測\nストライク率が0.5のときの勝利確率を予測した。\n\n\n[1] \"ストライク率 0.5 のときの勝利確率：12.1%\"\n\n\nモデルによる予測では、ストライク率が0.5のときの勝利確率は12.1％であった。ただし、この予測はストライク率のみを説明変数としたモデルによるものであり、実際の勝敗には被安打や四死球、防御率など他の要因も影響すると考えられる。",
+    "title": "5  結果と考察",
+    "section": "5.3 ロジスティック回帰分析",
+    "text": "5.3 ロジスティック回帰分析\nストライク率（Strike_Rate）を説明変数、勝敗（Win_Flag：勝利=1、敗北=0）を目的変数としてロジスティック回帰モデルを構築した。\n\n\n\n\n表 5.2: ロジスティック回帰モデルの係数\n\n\n\n\n\n\n\n推定値\n標準誤差\nz値\np値\n\n\n\n\n(Intercept)\n-12.3795\n6.9230\n-1.7882\n0.0738\n\n\nStrike_Rate\n20.7915\n11.7914\n1.7633\n0.0779\n\n\n\n\n\n\n\n\nロジスティック回帰分析の結果、ストライク率の回帰係数は20.79で正の値となり、ストライク率が高いほど勝利する確率が高くなる傾向が確認された。一方、p値は0.0779であり、5%水準では統計的に有意とはいえなかったものの、10%水準では有意な傾向がみられた。このことから、ストライク率は勝敗に影響を与える可能性が示唆された。\n\n回帰曲線の可視化\n図 5.3 にストライク率と勝利確率の関係を示す。\n\n\n\n\n\n\n\n\n図 5.3: ロジスティック回帰曲線（ストライク率 vs 勝敗）\n\n\n\n\n\n\n勝利確率の予測\nストライク率が0.5のときの勝利確率を予測した。\n\n\n[1] \"ストライク率 0.5 のときの勝利確率：12.1%\"\n\n\nモデルによる予測では、ストライク率が0.5のときの勝利確率は12.1％であった。ただし、この予測はストライク率のみを説明変数としたモデルによるものであり、実際の勝敗には被安打や四死球、防御率など他の要因も影響すると考えられる。",
     "crumbs": [
-      "結果と考察"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>結果と考察</span>"
     ]
   },
   {
     "objectID": "04_結果と考察.html#考察",
     "href": "04_結果と考察.html#考察",
-    "title": "結果と考察",
-    "section": "考察",
-    "text": "考察\n\n相関分析について\n相関行列（表 1）より、ストライク率とヒット数・四球数の間の関係を確認した。ストライク率が高い投手ほどヒットや四球を抑えられる傾向がある場合、守備面での有効性が示唆される。\n\n\nモデル性能について\n無相関検定の結果、ストライク率と勝敗の間に統計的に有意な相関が確認された（または確認されなかった）。ロジスティック回帰モデルの係数（表 2）より、ストライク率が1単位増加するごとの勝利オッズへの影響を読み取ることができる。\n\n\n影響要因について\nストライク率0.5における勝利確率の予測結果から、投手がストライクを投げ込む能力がチームの勝利に与える影響の大きさが定量的に示された。ただし、本分析は単一の説明変数のみを使用しており、防御率や奪三振率など他の投手指標を加えることでモデルの精度向上が期待できる。",
+    "title": "5  結果と考察",
+    "section": "5.4 考察",
+    "text": "5.4 考察\n\n相関分析について\n相関行列（表 5.1）より、ストライク率とヒット数・四球数の間の関係を確認した。ストライク率が高い投手ほどヒットや四球を抑えられる傾向がある場合、守備面での有効性が示唆される。\n\n\nモデル性能について\n無相関検定の結果、ストライク率と勝敗の間に統計的に有意な相関が確認された（または確認されなかった）。ロジスティック回帰モデルの係数（表 5.2）より、ストライク率が1単位増加するごとの勝利オッズへの影響を読み取ることができる。\n\n\n影響要因について\nストライク率0.5における勝利確率の予測結果から、投手がストライクを投げ込む能力がチームの勝利に与える影響の大きさが定量的に示された。ただし、本分析は単一の説明変数のみを使用しており、防御率や奪三振率など他の投手指標を加えることでモデルの精度向上が期待できる。",
     "crumbs": [
-      "結果と考察"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>結果と考察</span>"
     ]
   },
   {
     "objectID": "05_まとめ.html",
     "href": "05_まとめ.html",
-    "title": "まとめ",
+    "title": "6  まとめ",
     "section": "",
-    "text": "研究成果の要約\n本研究では、投手のストライク率が勝敗に与える影響について分析を行い、以下の成果を得た。",
+    "text": "6.1 研究成果の要約\n本研究では、投手のストライク率が勝敗に与える影響について分析を行い、以下の成果を得た。",
     "crumbs": [
-      "まとめ"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>まとめ</span>"
     ]
   },
   {
     "objectID": "05_まとめ.html#研究成果の要約",
     "href": "05_まとめ.html#研究成果の要約",
-    "title": "まとめ",
+    "title": "6  まとめ",
     "section": "",
     "text": "ストライク率と各指標の関係の把握：\n相関分析の結果、ストライク率が高いほどヒット数やエラー数が少なくなる傾向が確認された。\nストライク率と勝敗の関係の確認： 無相関検定では、ストライク率と勝敗の間に有意な相関(相関件数0.48、p値=0.0316)が確認され、ストライク率が試合結果に与える可能性が示された。\n勝利確率の予測： ロジスティック回帰分析を用いることで、ストライク率から勝利の確立を予測できることが示され、投手のストライク率がチームの勝利にかかわる重要な指標であることが分かった。",
     "crumbs": [
-      "まとめ"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>まとめ</span>"
     ]
   },
   {
     "objectID": "05_まとめ.html#研究の限界",
     "href": "05_まとめ.html#研究の限界",
-    "title": "まとめ",
-    "section": "研究の限界",
-    "text": "研究の限界\n本研究には以下の限界がある。\n\n説明変数としてストライク率のみを用いているため、勝敗に影響するほかの要因（防御率、奪三振数）\n\n試合数が20試合と少ないため、より多くの試合データを用いるbことで分析結果の信頼性を高める必要がある。\n対戦相手や試合会場などの外部に要員を考慮していない。",
+    "title": "6  まとめ",
+    "section": "6.2 研究の限界",
+    "text": "6.2 研究の限界\n本研究には以下の限界がある。\n\n説明変数としてストライク率のみを用いているため、勝敗に影響するほかの要因（防御率、奪三振数）\n\n試合数が20試合と少ないため、より多くの試合データを用いるbことで分析結果の信頼性を高める必要がある。\n対戦相手や試合会場などの外部に要員を考慮していない。",
     "crumbs": [
-      "まとめ"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>まとめ</span>"
     ]
   },
   {
     "objectID": "05_まとめ.html#今後の課題",
     "href": "05_まとめ.html#今後の課題",
-    "title": "まとめ",
-    "section": "今後の課題",
-    "text": "今後の課題\n\n防御率やWHIP、奪三振率など複数の投手指標を用いた分析を行う。\n\n打撃成績や守備成績も加えた多変量モデルを構築する。\n\n他チームのデータも用いて分析し、一般性を検証する。\n\nより多くの試合データを収集し、モデルの制度を向上させる。\n\n機械学習手法（ランダムフォレストやXGBoostなど）との比較を行う。",
+    "title": "6  まとめ",
+    "section": "6.3 今後の課題",
+    "text": "6.3 今後の課題\n\n防御率やWHIP、奪三振率など複数の投手指標を用いた分析を行う。\n\n打撃成績や守備成績も加えた多変量モデルを構築する。\n\n他チームのデータも用いて分析し、一般性を検証する。\n\nより多くの試合データを収集し、モデルの制度を向上させる。\n\n機械学習手法（ランダムフォレストやXGBoostなど）との比較を行う。",
     "crumbs": [
-      "まとめ"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>まとめ</span>"
     ]
   },
   {
     "objectID": "05_まとめ.html#謝辞",
     "href": "05_まとめ.html#謝辞",
-    "title": "まとめ",
-    "section": "謝辞",
-    "text": "謝辞\n本研究を進めるにあたり、丁寧なご指導をいただいた竹田恒先生に深く感謝いたします。また、データサイエンスコースの同期の皆さんとの議論は、研究の方向性を考える上で大変参考になりました。",
+    "title": "6  まとめ",
+    "section": "6.4 謝辞",
+    "text": "6.4 謝辞\n本研究を進めるにあたり、丁寧なご指導をいただいた竹田恒先生に深く感謝いたします。また、データサイエンスコースの同期の皆さんとの議論は、研究の方向性を考える上で大変参考になりました。",
     "crumbs": [
-      "まとめ"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>まとめ</span>"
     ]
   }
 ]
